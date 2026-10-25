@@ -45,7 +45,7 @@ def main():
         target = source / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, target)
-    for name in ("README.md", "README.txt", "NOTICE.txt", "LICENSE.txt"):
+    for name in ("README.md", "README.txt", "LISEZMOI.md", "NOTICE.txt", "LICENSE.txt"):
         shutil.copy2(ROOT / name, payload / name)
     for directory in ("licenses", "docs", "exemples"):
         shutil.copytree(ROOT / directory, payload / directory, dirs_exist_ok=True)

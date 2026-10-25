@@ -68,3 +68,10 @@ ne doivent pas contenir de chemins personnels ; `prepare_release.py` n’y conse
 
 Les installateurs et les archives de sources tierces vont dans les assets d’une GitHub Release,
 pas dans l’historique Git. Vérifier les sources correspondantes et les notices de chaque composant avant redistribution.
+
+## Captures de la documentation
+
+`python scripts/capture_documentation.py` génère les captures des widgets réels dans `docs/images/`,
+avec le fichier de démonstration du dépôt et un profil isolé dans `build/documentation-profile`.
+Le script effectue une conversion PNG → WebP pour illustrer la galerie des résultats.
+Les images sont rendues hors écran ; elles ne constituent pas une vidéo ni un test du geste dans l’Explorateur.
