@@ -1,0 +1,54 @@
+ZESTE 0.3.0 — OUTILS PAR TYPE ET CONFIGURATION
+
+Accès : clic droit sur l’icône orange → Fonctionnalités…
+Chaque case masque ou réactive l’outil correspondant. La recherche accepte
+le nom d’un outil ou d’un type de fichier. Choix conservés au redémarrage.
+
+Depuis l’Explorateur : glisser les fichiers, Ctrl, puis Tab ou survoler le
+centre de la roue pour passer aux Outils. Survoler « Suite » pour les autres
+outils. Déposer sur l’outil pour ouvrir uniquement son écran de réglage.
+Enregistrer une copie / Lancer applique l’opération ; Annuler revient à la
+roue au prochain geste. L’atelier ne s’ouvre pas automatiquement.
+
+IMAGES
+- Retoucher : exposition, luminosité, contraste, ombres, hautes lumières,
+  saturation, température, teinte, netteté, clarté, voile, bruit et grain.
+- Annoter : flèches, texte, rectangles, ellipses, numéros, dessin, surlignage.
+- Recadrer : zone tracée, position et dimensions exactes, ratios prédéfinis.
+- Masquer : plusieurs zones noires ou floutées. Export PNG aplati sans EXIF/XMP.
+- Fond : couleur/image, flou, marges, arrondis, ombre.
+- Collage : plusieurs images, colonnes, taille, espacement, arrondis, couleur.
+
+VIDÉO
+Couper, recadrer, changer la vitesse, assembler dans l’ordre choisi, extraire
+une ou plusieurs images PNG, diviser à intervalles égaux ou aux secondes
+indiquées, masquer/flouter une zone pendant un intervalle.
+
+AUDIO
+Normaliser avec cible LUFS/crête/plage dynamique, visualiseur MP4 avec couleurs
+et dimensions, couper, mono/stéréo avec gains gauche/droite, bip sur intervalle.
+
+PDF
+Fusion de plusieurs PDF dans l’ordre choisi. Organisation visuelle par
+vignettes : déplacer, dupliquer, retirer et pivoter les pages d’une copie.
+
+FICHIERS ET MÉTADONNÉES
+Compresser : optimisation des images, médias et PDF ; archive ZIP pour les
+autres formats. Les originaux sont conservés. Aucun PDF plus lourd n’est publié.
+Modifier les métadonnées : JPEG/TIFF, PNG, PDF, Office moderne et médias pris
+en charge. Pour les autres formats : fiche JSON distincte, indiquée à l’écran.
+
+LIMITES
+Réglages temporels numériques, sans lecteur vidéo/audio avec timeline.
+Masquage photo manuel : pas d’OCR/détection de visages automatique, ni loupe.
+L’éditeur exporte un PNG ; les GIF/multipages ne fournissent qu’une image.
+La correction de voile et les réglages photo utilisent les filtres propres
+à Zeste et ne promettent pas un résultat identique au logiciel Mac.
+
+VALIDATION
+Tests du moteur, préférences persistantes, filtrage des menus, annulation,
+édition visuelle, formats et fichiers réels ; exécutable portable contrôlé
+séparément. Rapport détaillé dans validation/ et sources dans source/.
+Les tests visuels utilisent un profil isolé et préservent les réglages personnels.
+
+Référence fonctionnelle : https://tangerineformac.com/tools#tool-editImage

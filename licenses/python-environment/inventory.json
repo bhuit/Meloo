@@ -1,0 +1,999 @@
+{
+  "scope": "Build environment; excludes in build_portable.py determine the smaller runtime set.",
+  "packages": [
+    {
+      "name": "altgraph",
+      "version": "0.17.5",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://altgraph.readthedocs.io/en/latest/",
+        "Issue tracker, https://github.com/ronaldoussoren/altgraph/issues",
+        "Repository, https://github.com/ronaldoussoren/altgraph"
+      ],
+      "homepage": "https://altgraph.readthedocs.io",
+      "notice_files": [
+        "licenses/python-environment/altgraph-0.17.5/LICENSE"
+      ]
+    },
+    {
+      "name": "backports.zstd",
+      "version": "1.8.0",
+      "license": "PSF-2.0",
+      "project_urls": [
+        "Homepage, https://github.com/rogdham/backports.zstd",
+        "Source, https://github.com/rogdham/backports.zstd"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/backports.zstd-1.8.0/LICENSE.txt",
+        "licenses/python-environment/backports.zstd-1.8.0/LICENSE_zstd.txt"
+      ]
+    },
+    {
+      "name": "beautifulsoup4",
+      "version": "4.15.0",
+      "license": "MIT License",
+      "project_urls": [
+        "Download, https://www.crummy.com/software/BeautifulSoup/bs4/download/",
+        "Homepage, https://www.crummy.com/software/BeautifulSoup/bs4/"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/beautifulsoup4-4.15.0/LICENSE"
+      ]
+    },
+    {
+      "name": "brotli",
+      "version": "1.2.0",
+      "license": "MIT",
+      "project_urls": [],
+      "homepage": "https://github.com/google/brotli",
+      "notice_files": [
+        "licenses/python-environment/brotli-1.2.0/LICENSE"
+      ]
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "license": null,
+      "project_urls": [
+        "Homepage, https://github.com/tartley/colorama"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/colorama-0.4.6/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "license": "PSFL",
+      "project_urls": [],
+      "homepage": "https://github.com/tiran/defusedxml",
+      "notice_files": [
+        "licenses/python-environment/defusedxml-0.7.1/LICENSE"
+      ]
+    },
+    {
+      "name": "EbookLib",
+      "version": "0.20",
+      "license": "GNU Affero General Public License",
+      "project_urls": [
+        "Documentation, https://ebooklib.readthedocs.io",
+        "Source, https://github.com/aerkalov/ebooklib",
+        "Bug Tracker, https://github.com/aerkalov/ebooklib/issues"
+      ],
+      "homepage": "https://github.com/aerkalov/ebooklib",
+      "notice_files": [
+        "licenses/python-environment/EbookLib-0.20/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "et_xmlfile",
+      "version": "2.0.0",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://openpyxl.pages.heptapod.net/et_xmlfile/",
+        "Source, https://foss.heptapod.net/openpyxl/et_xmlfile",
+        "Tracker, https://foss.heptapod.net/openpyxl/et_xmfile/-/issues"
+      ],
+      "homepage": "https://foss.heptapod.net/openpyxl/et_xmlfile",
+      "notice_files": [
+        "licenses/python-environment/et_xmlfile-2.0.0/LICENCE.python",
+        "licenses/python-environment/et_xmlfile-2.0.0/LICENCE.rst"
+      ]
+    },
+    {
+      "name": "fire",
+      "version": "0.7.1",
+      "license": "Apache-2.0",
+      "project_urls": [
+        "Homepage, https://github.com/google/python-fire",
+        "Repository, https://github.com/google/python-fire"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/fire-0.7.1/LICENSE"
+      ]
+    },
+    {
+      "name": "flatbuffers",
+      "version": "25.12.19",
+      "license": "Apache 2.0",
+      "project_urls": [
+        "Documentation, https://google.github.io/flatbuffers/",
+        "Source, https://github.com/google/flatbuffers"
+      ],
+      "homepage": "https://google.github.io/flatbuffers/",
+      "notice_files": []
+    },
+    {
+      "name": "fonttools",
+      "version": "4.67.0",
+      "license": "MIT",
+      "project_urls": [],
+      "homepage": "http://github.com/fonttools/fonttools",
+      "notice_files": [
+        "licenses/python-environment/fonttools-4.67.0/LICENSE",
+        "licenses/python-environment/fonttools-4.67.0/LICENSE.external"
+      ]
+    },
+    {
+      "name": "imageio-ffmpeg",
+      "version": "0.6.0",
+      "license": "BSD-2-Clause",
+      "project_urls": [],
+      "homepage": "https://github.com/imageio/imageio-ffmpeg",
+      "notice_files": [
+        "licenses/python-environment/imageio-ffmpeg-0.6.0/LICENSE"
+      ]
+    },
+    {
+      "name": "inflate64",
+      "version": "1.0.4",
+      "license": "LGPL-2.1-or-later",
+      "project_urls": [
+        "Source, https://github.com/miurahr/inflate64",
+        "Homepage, https://inflate64.readthedocs.io/",
+        "Documentation, https://inflate64.readthedocs.io/en/stable/",
+        "Bug Tracker, https://github.com/miurahr/inflate64/issues",
+        "Changelog, https://inflate64.readthedocs.io/en/latest/changelog.html"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/inflate64-1.0.4/COPYING"
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "license": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/pytest-dev/iniconfig"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/iniconfig-2.3.1/LICENSE"
+      ]
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3",
+      "license": "BSD-3-Clause",
+      "project_urls": [
+        "Source, https://github.com/lxml/lxml",
+        "Bug Tracker, https://bugs.launchpad.net/lxml"
+      ],
+      "homepage": "https://lxml.de/",
+      "notice_files": [
+        "licenses/python-environment/lxml-6.1.3/LICENSE.txt",
+        "licenses/python-environment/lxml-6.1.3/LICENSES.txt"
+      ]
+    },
+    {
+      "name": "Markdown",
+      "version": "3.11.2",
+      "license": "BSD-3-Clause",
+      "project_urls": [
+        "Homepage, https://Python-Markdown.github.io/",
+        "Documentation, https://Python-Markdown.github.io/",
+        "Repository, https://github.com/Python-Markdown/markdown",
+        "Issue Tracker, https://github.com/Python-Markdown/markdown/issues",
+        "Changelog, https://python-markdown.github.io/changelog/"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/Markdown-3.11.2/LICENSE.md"
+      ]
+    },
+    {
+      "name": "multivolumefile",
+      "version": "0.2.3",
+      "license": "LGPL-2.1+",
+      "project_urls": [],
+      "homepage": "https://github.com/miurahr/multivolume",
+      "notice_files": [
+        "licenses/python-environment/multivolumefile-0.2.3/LICENSE"
+      ]
+    },
+    {
+      "name": "networkx",
+      "version": "3.7",
+      "license": "BSD-3-Clause",
+      "project_urls": [
+        "Homepage, https://networkx.org/",
+        "Bug Tracker, https://github.com/networkx/networkx/issues",
+        "Documentation, https://networkx.org/documentation/stable/",
+        "Source Code, https://github.com/networkx/networkx"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/networkx-3.7/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4",
+      "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "project_urls": [
+        "homepage, https://numpy.org",
+        "documentation, https://numpy.org/doc/",
+        "source, https://github.com/numpy/numpy",
+        "download, https://pypi.org/project/numpy/#files",
+        "tracker, https://github.com/numpy/numpy/issues",
+        "release notes, https://numpy.org/doc/stable/release"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/numpy-2.5.4/LICENSE.txt",
+        "licenses/python-environment/numpy-2.5.4/a8e2e00a-LICENSE.txt",
+        "licenses/python-environment/numpy-2.5.4/COPYING",
+        "licenses/python-environment/numpy-2.5.4/LICENSE",
+        "licenses/python-environment/numpy-2.5.4/dragon4_LICENSE.txt",
+        "licenses/python-environment/numpy-2.5.4/LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/0fccb437-LICENSE",
+        "licenses/python-environment/numpy-2.5.4/4164dbce-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/5eebe773-LICENSE.txt",
+        "licenses/python-environment/numpy-2.5.4/fb7112b3-LICENSE",
+        "licenses/python-environment/numpy-2.5.4/e1d55a9c-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/daa6b620-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/8cc9e5a8-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/cca1c4f3-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/308f789d-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/4b08416d-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/19f48fc8-LICENSE.md",
+        "licenses/python-environment/numpy-2.5.4/0f4ffb29-LICENSE.txt",
+        "licenses/python-environment/numpy-2.5.4/ddfcf346-LICENSE",
+        "licenses/python-environment/numpy-2.5.4/c21c9379-LICENSE.md"
+      ]
+    },
+    {
+      "name": "onnxruntime",
+      "version": "1.31.0",
+      "license": "MIT License",
+      "project_urls": [],
+      "homepage": "https://onnxruntime.ai",
+      "notice_files": [
+        "licenses/python-environment/onnxruntime-1.31.0/LICENSE",
+        "licenses/python-environment/onnxruntime-1.31.0/ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "name": "opencv-python-headless",
+      "version": "5.0.0.93",
+      "license": "Apache 2.0",
+      "project_urls": [],
+      "homepage": "https://github.com/opencv/opencv-python",
+      "notice_files": [
+        "licenses/python-environment/opencv-python-headless-5.0.0.93/LICENSE-3RD-PARTY.txt",
+        "licenses/python-environment/opencv-python-headless-5.0.0.93/LICENSE.txt",
+        "licenses/python-environment/opencv-python-headless-5.0.0.93/LICENSE-3RD-PARTY.txt",
+        "licenses/python-environment/opencv-python-headless-5.0.0.93/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://openpyxl.readthedocs.io/en/stable/",
+        "Source, https://foss.heptapod.net/openpyxl/openpyxl",
+        "Tracker, https://foss.heptapod.net/openpyxl/openpyxl/-/issues"
+      ],
+      "homepage": "https://openpyxl.readthedocs.io",
+      "notice_files": [
+        "licenses/python-environment/openpyxl-3.1.5/LICENCE.rst"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "project_urls": [
+        "Documentation, https://packaging.pypa.io/",
+        "Source, https://github.com/pypa/packaging"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/packaging-26.3/LICENSE",
+        "licenses/python-environment/packaging-26.3/LICENSE.APACHE",
+        "licenses/python-environment/packaging-26.3/LICENSE.BSD"
+      ]
+    },
+    {
+      "name": "pdf2docx",
+      "version": "0.5.13",
+      "license": "MIT",
+      "project_urls": [],
+      "homepage": "https://artifex.com/",
+      "notice_files": [
+        "licenses/python-environment/pdf2docx-0.5.13/LICENSE"
+      ]
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "license": "MIT",
+      "project_urls": [],
+      "homepage": "https://github.com/erocarrera/pefile",
+      "notice_files": [
+        "licenses/python-environment/pefile-2024.8.26/LICENSE"
+      ]
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0",
+      "license": "MIT-CMU",
+      "project_urls": [
+        "Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html",
+        "Changelog, https://github.com/python-pillow/Pillow/releases",
+        "Documentation, https://pillow.readthedocs.io",
+        "Funding, https://tidelift.com/lifter/search/pypi/pillow",
+        "Homepage, https://python-pillow.org",
+        "Mastodon, https://fosstodon.org/@pillow",
+        "Security, https://pillow.readthedocs.io/en/stable/handbook/security.html",
+        "Source, https://github.com/python-pillow/Pillow"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pillow-13.0.0/LICENSE"
+      ]
+    },
+    {
+      "name": "pillow_heif",
+      "version": "1.8.1",
+      "license": "BSD-3-Clause",
+      "project_urls": [
+        "Documentation, https://pillow-heif.readthedocs.io",
+        "Source, https://github.com/bigcat88/pillow_heif",
+        "Changelog, https://github.com/bigcat88/pillow_heif/blob/master/CHANGELOG.md"
+      ],
+      "homepage": "https://github.com/bigcat88/pillow_heif",
+      "notice_files": [
+        "licenses/python-environment/pillow_heif-1.8.1/LICENSE.txt",
+        "licenses/python-environment/pillow_heif-1.8.1/LICENSES_bundled.txt"
+      ]
+    },
+    {
+      "name": "pip",
+      "version": "25.0.1",
+      "license": "MIT",
+      "project_urls": [
+        "Homepage, https://pip.pypa.io/",
+        "Documentation, https://pip.pypa.io",
+        "Source, https://github.com/pypa/pip",
+        "Changelog, https://pip.pypa.io/en/stable/news/"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pip-25.0.1/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "license": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/pytest-dev/pluggy",
+        "Documentation, https://pluggy.readthedocs.io/",
+        "Changelog, https://pluggy.readthedocs.io/en/latest/changelog.html",
+        "Repository, https://github.com/pytest-dev/pluggy",
+        "Issues, https://github.com/pytest-dev/pluggy/issues",
+        "Funding, https://tidelift.com/subscription/pkg/pypi-pluggy"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pluggy-1.7.0/LICENSE"
+      ]
+    },
+    {
+      "name": "protobuf",
+      "version": "7.36.2",
+      "license": "3-Clause BSD License",
+      "project_urls": [],
+      "homepage": "https://developers.google.com/protocol-buffers/",
+      "notice_files": [
+        "licenses/python-environment/protobuf-7.36.2/LICENSE"
+      ]
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "license": "BSD-3-Clause",
+      "project_urls": [],
+      "homepage": "https://github.com/giampaolo/psutil",
+      "notice_files": [
+        "licenses/python-environment/psutil-7.2.2/LICENSE"
+      ]
+    },
+    {
+      "name": "py7zr",
+      "version": "1.1.4",
+      "license": "LGPL-2.1-or-later",
+      "project_urls": [
+        "Homepage, https://py7zr.readthedocs.io/",
+        "Documentation, https://py7zr.readthedocs.io/en/stable/",
+        "Bug Tracker, https://github.com/miurahr/py7zr/issues",
+        "Source, https://github.com/miurahr/py7zr",
+        "Changelog, https://py7zr.readthedocs.io/en/latest/Changelog.html"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/py7zr-1.1.4/LICENSE"
+      ]
+    },
+    {
+      "name": "pybcj",
+      "version": "1.0.8",
+      "license": "LGPL-2.1-or-later",
+      "project_urls": [
+        "Homepage, https://pypi.org/project/pybcj",
+        "Bug Tracker, https://github.com/miurahr/pybcj/issues",
+        "Source, https://github.com/miurahr/pybcj",
+        "Changelog, https://github.com/miurahr/pybcj/blob/main/Changelog.rst"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pybcj-1.0.8/LICENSE"
+      ]
+    },
+    {
+      "name": "pycryptodomex",
+      "version": "3.24.1",
+      "license": "BSD, Public Domain",
+      "project_urls": [
+        "Source, https://github.com/Legrandin/pycryptodome/",
+        "Changelog, https://www.pycryptodome.org/src/changelog"
+      ],
+      "homepage": "https://www.pycryptodome.org",
+      "notice_files": [
+        "licenses/python-environment/pycryptodomex-3.24.1/LICENSE.rst"
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "license": "BSD-2-Clause",
+      "project_urls": [
+        "Homepage, https://pygments.org",
+        "Documentation, https://pygments.org/docs",
+        "Source, https://github.com/pygments/pygments",
+        "Bug Tracker, https://github.com/pygments/pygments/issues",
+        "Changelog, https://github.com/pygments/pygments/blob/master/CHANGES"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/Pygments-2.21.0/LICENSE"
+      ]
+    },
+    {
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+      "project_urls": [
+        "Homepage, https://pyinstaller.org",
+        "Documentation, https://pyinstaller.org",
+        "Source Code, https://github.com/pyinstaller/pyinstaller",
+        "Release Notes, https://pyinstaller.org/en/stable/CHANGES.html"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pyinstaller-6.22.3/COPYING.txt"
+      ]
+    },
+    {
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.9",
+      "license": null,
+      "project_urls": [],
+      "homepage": "https://github.com/pyinstaller/pyinstaller-hooks-contrib",
+      "notice_files": [
+        "licenses/python-environment/pyinstaller-hooks-contrib-2026.9/LICENSE"
+      ]
+    },
+    {
+      "name": "pymupdf",
+      "version": "2.0",
+      "license": "Dual Licensed - GNU AFFERO GPL 3.0 or Artifex Commercial License",
+      "project_urls": [
+        "Documentation, https://pymupdf.readthedocs.io/",
+        "Source, https://github.com/pymupdf/pymupdf",
+        "Tracker, https://github.com/pymupdf/PyMuPDF/issues",
+        "Changelog, https://pymupdf.readthedocs.io/en/latest/changes.html"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pymupdf-2.0/COPYING"
+      ]
+    },
+    {
+      "name": "pymupdf4llm",
+      "version": "2.0",
+      "license": null,
+      "project_urls": [],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "pymupdf_layout",
+      "version": "2.0",
+      "license": null,
+      "project_urls": [],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "pypandoc_binary",
+      "version": "1.17",
+      "license": "MIT",
+      "project_urls": [
+        "Source, https://github.com/JessicaTegner/pypandoc",
+        "Tracker, https://github.com/JessicaTegner/pypandoc/issues"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "pyppmd",
+      "version": "1.3.1",
+      "license": "LGPL-2.1-or-later",
+      "project_urls": [
+        "Source, https://github.com/miurahr/pyppmd",
+        "Homepage, https://pyppmd.readthedocs.io/",
+        "Documentation, https://pyppmd.readthedocs.io/en/stable/",
+        "Bug Tracker, https://github.com/miurahr/pyppmd/issues",
+        "Changelog, https://pyppmd.readthedocs.io/en/latest/changelog.html"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pyppmd-1.3.1/LICENSE"
+      ]
+    },
+    {
+      "name": "PySide6",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "project_urls": [
+        "Homepage, https://pyside.org",
+        "Documentation, https://doc.qt.io/qtforpython",
+        "Repository, https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Changelog, https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Tracker, https://qt-project.atlassian.net/browse/PYSIDE"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/PySide6-6.12.0/LicenseRef-Qt-Commercial.txt"
+      ]
+    },
+    {
+      "name": "PySide6_Addons",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "project_urls": [
+        "Homepage, https://pyside.org",
+        "Documentation, https://doc.qt.io/qtforpython",
+        "Repository, https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Changelog, https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Tracker, https://qt-project.atlassian.net/browse/PYSIDE"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/PySide6_Addons-6.12.0/LicenseRef-Qt-Commercial.txt"
+      ]
+    },
+    {
+      "name": "PySide6_Essentials",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "project_urls": [
+        "Homepage, https://pyside.org",
+        "Documentation, https://doc.qt.io/qtforpython",
+        "Repository, https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Changelog, https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Tracker, https://qt-project.atlassian.net/browse/PYSIDE"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/PySide6_Essentials-6.12.0/LicenseRef-Qt-Commercial.txt"
+      ]
+    },
+    {
+      "name": "PySide6_Pdf",
+      "version": "6.12.0.140",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "project_urls": [
+        "Homepage, https://pyside.org",
+        "Documentation, https://doc.qt.io/qtforpython",
+        "Repository, https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Changelog, https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Tracker, https://qt-project.atlassian.net/browse/PYSIDE"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/PySide6_Pdf-6.12.0.140/LicenseRef-Qt-Commercial.txt"
+      ]
+    },
+    {
+      "name": "PySide6_WebEngine",
+      "version": "6.12.0.140",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "project_urls": [
+        "Homepage, https://pyside.org",
+        "Documentation, https://doc.qt.io/qtforpython",
+        "Repository, https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Changelog, https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Tracker, https://qt-project.atlassian.net/browse/PYSIDE"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/PySide6_WebEngine-6.12.0.140/LicenseRef-Qt-Commercial.txt"
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "license": "MIT",
+      "project_urls": [
+        "Changelog, https://docs.pytest.org/en/stable/changelog.html",
+        "Contact, https://docs.pytest.org/en/stable/contact.html",
+        "Funding, https://docs.pytest.org/en/stable/sponsor.html",
+        "Homepage, https://docs.pytest.org/en/latest/",
+        "Source, https://github.com/pytest-dev/pytest",
+        "Tracker, https://github.com/pytest-dev/pytest/issues"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pytest-9.1.1/LICENSE"
+      ]
+    },
+    {
+      "name": "python-docx",
+      "version": "1.2.0",
+      "license": "MIT",
+      "project_urls": [
+        "Changelog, https://github.com/python-openxml/python-docx/blob/master/HISTORY.rst",
+        "Documentation, https://python-docx.readthedocs.org/en/latest/",
+        "Homepage, https://github.com/python-openxml/python-docx",
+        "Repository, https://github.com/python-openxml/python-docx"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/python-docx-1.2.0/LICENSE"
+      ]
+    },
+    {
+      "name": "python-pptx",
+      "version": "1.0.2",
+      "license": "MIT",
+      "project_urls": [
+        "Changelog, https://github.com/scanny/python-pptx/blob/master/HISTORY.rst",
+        "Documentation, https://python-pptx.readthedocs.io/en/latest/",
+        "Homepage, https://github.com/scanny/python-pptx",
+        "Repository, https://github.com/scanny/python-pptx"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/python-pptx-1.0.2/LICENSE"
+      ]
+    },
+    {
+      "name": "pywin32",
+      "version": "312",
+      "license": "PSF",
+      "project_urls": [
+        "Homepage, https://github.com/mhammond/pywin32",
+        "Changes, https://github.com/mhammond/pywin32/blob/main/CHANGES.md",
+        "Docs, https://mhammond.github.io/pywin32/",
+        "Bugs, https://github.com/mhammond/pywin32/issues",
+        "Support Requests, https://github.com/mhammond/pywin32/discussions",
+        "Mailing List, https://mail.python.org/mailman/listinfo/python-win32"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/pywin32-312/license.txt",
+        "licenses/python-environment/pywin32-312/c2a4985a-License.txt",
+        "licenses/python-environment/pywin32-312/Scintilla-License.txt",
+        "licenses/python-environment/pywin32-312/1445ad86-LICENSE.txt",
+        "licenses/python-environment/pywin32-312/license.txt",
+        "licenses/python-environment/pywin32-312/ae73a466-License.txt",
+        "licenses/python-environment/pywin32-312/LICENSE",
+        "licenses/python-environment/pywin32-312/63001652-License.txt",
+        "licenses/python-environment/pywin32-312/6eec8b7b-License.txt",
+        "licenses/python-environment/pywin32-312/dc852716-LICENSE.txt",
+        "licenses/python-environment/pywin32-312/d04b9dea-License.txt",
+        "licenses/python-environment/pywin32-312/3c06ee52-License.txt",
+        "licenses/python-environment/pywin32-312/cf5cae3a-License.txt",
+        "licenses/python-environment/pywin32-312/881f648e-License.txt",
+        "licenses/python-environment/pywin32-312/MAPIStubLibrary-License.txt",
+        "licenses/python-environment/pywin32-312/NOTICE.md"
+      ]
+    },
+    {
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "license": "BSD-3-Clause",
+      "project_urls": [],
+      "homepage": "https://github.com/enthought/pywin32-ctypes",
+      "notice_files": [
+        "licenses/python-environment/pywin32-ctypes-0.2.3/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "license": "MIT",
+      "project_urls": [
+        "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+        "CI, https://github.com/yaml/pyyaml/actions",
+        "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+        "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+        "Source Code, https://github.com/yaml/pyyaml"
+      ],
+      "homepage": "https://pyyaml.org/",
+      "notice_files": [
+        "licenses/python-environment/PyYAML-6.0.3/LICENSE"
+      ]
+    },
+    {
+      "name": "qrcode",
+      "version": "8.2",
+      "license": "BSD",
+      "project_urls": [],
+      "homepage": "https://github.com/lincolnloop/python-qrcode",
+      "notice_files": [
+        "licenses/python-environment/qrcode-8.2/LICENSE"
+      ]
+    },
+    {
+      "name": "rarfile",
+      "version": "4.5",
+      "license": "ISC",
+      "project_urls": [],
+      "homepage": "https://github.com/markokr/rarfile",
+      "notice_files": [
+        "licenses/python-environment/rarfile-4.5/LICENSE"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Source, https://github.com/pypa/setuptools",
+        "Documentation, https://setuptools.pypa.io/",
+        "Changelog, https://setuptools.pypa.io/en/stable/history.html"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/setuptools-84.2.1/LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/b8b1f5f0-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/4a7fd6a9-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/4d09286a-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/63a92caf-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/6562dd76-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/7d04faf7-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/LICENSE.APACHE",
+        "licenses/python-environment/setuptools-84.2.1/LICENSE.BSD",
+        "licenses/python-environment/setuptools-84.2.1/d6b8bc45-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/1ab641e9-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/LICENSE.txt",
+        "licenses/python-environment/setuptools-84.2.1/0e45092c-LICENSE",
+        "licenses/python-environment/setuptools-84.2.1/NOTICE",
+        "licenses/python-environment/setuptools-84.2.1/e972ee51-NOTICE"
+      ]
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "project_urls": [
+        "Homepage, https://pyside.org",
+        "Documentation, https://doc.qt.io/qtforpython",
+        "Repository, https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Changelog, https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Tracker, https://qt-project.atlassian.net/browse/PYSIDE"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/shiboken6-6.12.0/LicenseRef-Qt-Commercial.txt"
+      ]
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "license": "MIT",
+      "project_urls": [],
+      "homepage": "https://github.com/benjaminp/six",
+      "notice_files": [
+        "licenses/python-environment/six-1.17.0/LICENSE"
+      ]
+    },
+    {
+      "name": "soupsieve",
+      "version": "3.0.4",
+      "license": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/facelessuser/soupsieve"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/soupsieve-3.0.4/LICENSE.md"
+      ]
+    },
+    {
+      "name": "tabulate",
+      "version": "0.10.0",
+      "license": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/astanin/python-tabulate"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/tabulate-0.10.0/LICENSE"
+      ]
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0",
+      "license": "MIT",
+      "project_urls": [
+        "Changelog, https://github.com/termcolor/termcolor/releases",
+        "Homepage, https://github.com/termcolor/termcolor",
+        "Source, https://github.com/termcolor/termcolor"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/termcolor-3.3.0/COPYING.txt"
+      ]
+    },
+    {
+      "name": "texttable",
+      "version": "1.7.2",
+      "license": "MIT",
+      "project_urls": [],
+      "homepage": "https://github.com/foutaise/texttable/",
+      "notice_files": [
+        "licenses/python-environment/texttable-1.7.2/LICENSE"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license": "PSF-2.0",
+      "project_urls": [
+        "Bug Tracker, https://github.com/python/typing_extensions/issues",
+        "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+        "Documentation, https://typing-extensions.readthedocs.io/",
+        "Home, https://github.com/python/typing_extensions",
+        "Q & A, https://github.com/python/typing/discussions",
+        "Repository, https://github.com/python/typing_extensions"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/typing_extensions-4.16.0/LICENSE"
+      ]
+    },
+    {
+      "name": "winrt-runtime",
+      "version": "3.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "winrt-Windows.ApplicationModel.DataTransfer",
+      "version": "3.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "winrt-Windows.Foundation",
+      "version": "3.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "winrt-Windows.Foundation.Collections",
+      "version": "3.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "winrt-Windows.Storage",
+      "version": "3.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "winrt-Windows.Storage.Streams",
+      "version": "3.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "winrt-Windows.System",
+      "version": "3.2.1",
+      "license": "MIT",
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "homepage": null,
+      "notice_files": []
+    },
+    {
+      "name": "xlsxwriter",
+      "version": "3.3.0",
+      "license": "BSD-2-Clause",
+      "project_urls": [
+        "Homepage, https://github.com/jmcnamara/XlsxWriter",
+        "Documentation, https://xlsxwriter.readthedocs.io",
+        "Repository, https://github.com/jmcnamara/XlsxWriter",
+        "Issues, https://github.com/jmcnamara/XlsxWriter/issues",
+        "Changelog, https://github.com/jmcnamara/XlsxWriter/blob/main/Changes"
+      ],
+      "homepage": null,
+      "notice_files": [
+        "licenses/python-environment/xlsxwriter-3.3.0/LICENSE.txt"
+      ]
+    }
+  ]
+}

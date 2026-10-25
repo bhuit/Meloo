@@ -1,0 +1,130 @@
+{
+  "archives": [
+    {
+      "component": "Qt",
+      "version": "6.12.0",
+      "url": "https://download.qt.io/archive/qt/6.12/6.12.0/single/qt-everywhere-src-6.12.0.tar.xz",
+      "filename": "qt-everywhere-src-6.12.0.tar.xz",
+      "sha256": "98ff4f44bac6ec3e1e62ee2a4316ae0e3d15badb015d753cc0268a20db52f165",
+      "bytes": 443394020,
+      "status": "downloaded"
+    },
+    {
+      "component": "PySide/Shiboken",
+      "version": "6.12.0",
+      "url": "https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.12.0-src/pyside-setup-everywhere-src-6.12.0.tar.xz",
+      "filename": "pyside-setup-everywhere-src-6.12.0.tar.xz",
+      "sha256": "099c1a597cf33c1b000e11cf68a0b82d216fb802bf81726efc720394f10c7751",
+      "bytes": 18211772,
+      "status": "downloaded"
+    },
+    {
+      "component": "LibreOffice core",
+      "version": "26.8.1.1",
+      "url": "https://download.documentfoundation.org/libreoffice/src/26.8.1/libreoffice-26.8.1.1.tar.xz",
+      "filename": "libreoffice-26.8.1.1.tar.xz",
+      "sha256": "296ba78e7ab0d381b94c3d6342f4ebb2320ee5097ca58781b9b744cab90b9785",
+      "bytes": 302435508,
+      "status": "downloaded"
+    },
+    {
+      "component": "LibreOffice dictionaries",
+      "version": "26.8.1.1",
+      "url": "https://download.documentfoundation.org/libreoffice/src/26.8.1/libreoffice-dictionaries-26.8.1.1.tar.xz",
+      "filename": "libreoffice-dictionaries-26.8.1.1.tar.xz",
+      "sha256": "ce366c50178f5bdf6df1c6df4a0146899cf27a0017734190d00d90f0c5acac61",
+      "bytes": 62319860,
+      "status": "downloaded"
+    },
+    {
+      "component": "LibreOffice help",
+      "version": "26.8.1.1",
+      "url": "https://download.documentfoundation.org/libreoffice/src/26.8.1/libreoffice-help-26.8.1.1.tar.xz",
+      "filename": "libreoffice-help-26.8.1.1.tar.xz",
+      "sha256": "f1de4054194e8718f699ddf2b269165613c8dd07c10c55b32968c977f0c6234f",
+      "bytes": 53513324,
+      "status": "downloaded"
+    },
+    {
+      "component": "LibreOffice translations",
+      "version": "26.8.1.1",
+      "url": "https://download.documentfoundation.org/libreoffice/src/26.8.1/libreoffice-translations-26.8.1.1.tar.xz",
+      "filename": "libreoffice-translations-26.8.1.1.tar.xz",
+      "sha256": "789519befa409d7eec24043cea41ddd318d9f1212f555d8b28d4982e35693bfc",
+      "bytes": 236160656,
+      "status": "downloaded"
+    },
+    {
+      "component": "FFmpeg",
+      "version": "b08d7969c5 (Gyan 7.1)",
+      "url": "https://github.com/FFmpeg/FFmpeg/archive/b08d7969c5.tar.gz",
+      "filename": "ffmpeg-b08d7969c5.tar.gz",
+      "sha256": "02fa6d9827da3b6786e4df821218cc036db2b4481e7f48267c2dcda695633afc",
+      "bytes": 15900622,
+      "status": "downloaded"
+    },
+    {
+      "component": "Pandoc",
+      "version": "3.9",
+      "url": "https://github.com/jgm/pandoc/archive/refs/tags/3.9.tar.gz",
+      "filename": "pandoc-3.9.tar.gz",
+      "sha256": "d8da16e1ad1f685123fbc1a5a83b74766bcfd939dc6989484822f023bb70438f",
+      "bytes": 8606085,
+      "status": "downloaded"
+    },
+    {
+      "component": "pypandoc",
+      "version": "1.17",
+      "url": "https://github.com/JessicaTegner/pypandoc/archive/refs/tags/v1.17.tar.gz",
+      "filename": "pypandoc-v1.17.tar.gz",
+      "sha256": "6fcd5739c2eefec86723df9b6ae4eac2c3918d8bf22b7209adcb5cd1c23d20c1",
+      "bytes": 68117,
+      "status": "downloaded"
+    },
+    {
+      "component": "CPython",
+      "version": "3.12.10",
+      "url": "https://www.python.org/ftp/python/3.12.10/Python-3.12.10.tar.xz",
+      "filename": "Python-3.12.10.tar.xz",
+      "sha256": "07ab697474595e06f06647417d3c7fa97ded07afc1a7e4454c5639919b46eaea",
+      "bytes": 20520960,
+      "status": "downloaded"
+    },
+    {
+      "component": "MuPDF",
+      "version": "1.28.5 (PyMuPDF 2.0 build recipe)",
+      "url": "https://mupdf.com/downloads/archive/mupdf-1.28.5-source.tar.gz",
+      "filename": "mupdf-1.28.5-source.tar.gz",
+      "sha256": "98a5c10cda20c3992cdf76ff6b2a1149c32bd79cc796d3f703230b1185b7e934",
+      "bytes": 68919385,
+      "status": "downloaded"
+    },
+    {
+      "component": "libheif",
+      "version": "1.23.6",
+      "url": "https://github.com/strukturag/libheif/releases/download/v1.23.6/libheif-1.23.6.tar.gz",
+      "filename": "libheif-1.23.6.tar.gz",
+      "sha256": "4484346dc5995319dbc11e3a1c35d0a2ec46511ce370900869337fd2c7033125",
+      "bytes": 2373898,
+      "status": "downloaded"
+    },
+    {
+      "component": "libde265",
+      "version": "1.1.3",
+      "url": "https://github.com/strukturag/libde265/releases/download/v1.1.3/libde265-1.1.3.tar.gz",
+      "filename": "libde265-1.1.3.tar.gz",
+      "sha256": "554228bd17788c99a7e63b37ab5634722190e6e2bf60c1dcb01cef328e133905",
+      "bytes": 324452,
+      "status": "downloaded"
+    },
+    {
+      "component": "x265 for pillow-heif",
+      "version": "4.3",
+      "url": "https://github.com/Multicorewareinc/x265/releases/download/4.3/x265_4.3.tar.gz",
+      "filename": "x265_4.3.tar.gz",
+      "sha256": "83c53e4c8bbb8f1e33ed59e10a7d621d1d7801ca853910c3eb41f038b8ffb121",
+      "bytes": 2052112,
+      "status": "downloaded"
+    }
+  ]
+}

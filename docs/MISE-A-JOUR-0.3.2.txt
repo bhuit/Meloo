@@ -1,0 +1,18 @@
+ZESTE 0.3.2 — ATELIER VERRE ET LUMIÈRE
+
+Thème inspiré de l'image fournie : fond bleu nuit, halos orange/violet/turquoise,
+secteurs de roue en verre gris, centre sombre avec anneau lumineux turquoise.
+L'atelier montre les fichiers à gauche, la conversion au centre et les résultats
+réels à droite. Les images possèdent une vignette ; les autres fichiers une
+icône de document. Double-cliquer sur un résultat permet de le retrouver.
+
+Les actions rapides permettent de compresser, retoucher une image et configurer
+les fonctionnalités. Elles suivent la sélection et les fonctions activées.
+L'anneau affiche l'avancement renvoyé par le moteur pendant le traitement.
+
+Inclus : correction du menu après lancement masqué et déplacement de la roue
+en maintenant le bouton gauche sur son centre. Un clic simple au centre change
+de menu ; un déplacement ne lance aucune conversion. Voir la note 0.3.1.
+
+Le démarrage reste silencieux avec l'icône orange près de l'horloge. L'atelier
+complet s'ouvre uniquement quand on le demande. Les préférences sont conservées.

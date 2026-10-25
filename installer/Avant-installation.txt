@@ -1,0 +1,13 @@
+﻿MELOO — INSTALLATION POUR WINDOWS
+
+Cette installation contient l'application et ses moteurs de conversion : images, PDF, documents, vidéos, audio et archives. Elle fonctionne hors connexion, sans Python à installer séparément.
+
+Si une ancienne version de Meloo ou Zeste tourne déjà, terminez les conversions puis choisissez « Quitter » dans le menu de son icône près de l'horloge avant de lancer la nouvelle installation.
+
+Choisissez un dossier réservé à Meloo. L'assistant propose ensuite les raccourcis du menu Démarrer et, si vous le souhaitez, du Bureau.
+
+Les préférences existantes sont conservées. Le démarrage automatique avec Windows se règle dans Meloo et n'est pas activé par cet assistant.
+
+La désinstallation est disponible dans Paramètres Windows > Applications > Applications installées > Meloo. Elle conserve vos préférences et vos fichiers convertis.
+
+La licence, les mentions des composants et les sources de l'application sont incluses dans le dossier d'installation.

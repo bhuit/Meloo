@@ -1,0 +1,121 @@
+RÉFÉRENCES, PREUVES ET ÉCARTS — 22 OCTOBRE 2026
+
+Objectif : reconstruire sous Windows l’expérience Open Tangerine native Mac,
+avec les outils locaux disponibles. Ce document sépare observation, adaptation
+et validation ; il ne prétend pas avoir exécuté l’application Mac.
+
+1. VIDÉO
+
+https://www.youtube.com/watch?v=ykAUNww86So
+« J’ai cloné une application payante avec Claude Code (Fin du SAAS ?) »,
+Baptiste Simard, 15 octobre 2026, 19 min 56 s, métadonnées vues dans le navigateur.
+Elle reconstruit Wispr Flow en Dicto. Passages lus visuellement : installation
+REA 7:48 ; enquête statique 9:07 ; résultats/éléments non prouvés 10:09 ; prompt
+fonctionnement/style/pages 10:40–10:51. Les étapes tests/extensions/Notion sont
+annoncées par les chapitres, sans observation intégrale de ces passages.
+La transcription est restée indisponible. Les prompts complets nécessitaient
+un formulaire email ; aucun formulaire ni donnée utilisateur n’a été envoyé.
+Les API vocales Deepgram/OpenRouter ne sont pas utilisées dans le convertisseur.
+
+2. ARCHIVE FOURNIE — REA
+
+ZIP : Open-Tangerine-0.1.10-macOS.zip (3 059 612 octets).
+SHA-256 : 89d85d7b9eb25953a90bb09dfd3bc7e7dfc7465e0febb6401a4be9ba4041ca89
+REA open_binary, inspect_artifact, project_apple_application_graph,
+extract_artifact et export_evidence_bundle exécutés ; aucune exécution du Mac.
+
+Inventaire : 13 nœuds/13 occurrences/12 arêtes, entrées ZIP couvertes,
+aucune contradiction d’intégrité signalée. Un .app natif avec exécutable universel,
+Info.plist, icône, licences et CodeResources. Aucun JavaScript/Electron embarqué,
+aucun moteur FFmpeg embarqué dans les entrées de ce ZIP. L’absence dans le ZIP
+ne prouve pas l’absence de téléchargement ou d’utilisation d’un moteur externe.
+Extraction : 7 fichiers réguliers, confinement validé par REA.
+
+Manifest : agm_0049a722f2879ee427b56afd924681da8b0fd4c588c4459dddd4bb066594d7f0
+Evidence inspection : ev_8a2aa78160d579f7c5753d6d6670b628b2d7366af233c1b74f0d6577677a291a
+Evidence inventaire : ev_363403cc45edb9255c8d6cd7212a8350403229b2b22432c50bb2a124a0beb900
+Evidence projection : ev_30b6d220500906870ac7c02487193f0f68370915ae1b939034afc223991e6d7e
+Evidence extraction : ev_e236e9cde2487cf355214a534fd67f4317433b17577e3f32b2f6326b59bdfa2a
+Bundle JSON : Open-Tangerine-Reference/rea/evidence.json (4 enregistrements).
+
+Limite rencontrée : inspect_macho REA répond capability_unavailable : les outils
+natifs macOS exigent macOS. Pas de désassemblage ou exécution macOS revendiqués.
+Le snapshot immuable n’a pas été créé (profil concret du provider absent pour
+l’archive) ; le bundle de preuves a bien été exporté et les sessions fermées.
+
+Complément statique Python (read_static_metadata.py, explicitement hors REA) :
+Info.plist : com.syntaxerror.opentangerine, version 0.1.10, build 11, macOS >=15,
+LSUIElement vrai. En-têtes universels vérifiés : x86_64 et arm64, 61 commandes
+de chargement par tranche, minimum15.0/SDK26.5. Dépendances déclarées : SwiftUI,
+AppKit, ImageIO, PDFKit, AVFoundation, CoreImage, CryptoKit et bibliothèques système.
+Les commandes de chargement prouvent des dépendances déclarées, pas leur usage
+effectif pour chaque fonction. La signature/notarisation n’a pas été validée.
+SHA-256 exécutable : e92b675d88d05a2f7d01cf6b859431374b2046850517f28f55b3d3aa9e0f4671
+
+3. CODE SOURCE
+
+https://github.com/sintaxerrorpvtltd/Open-Tangerine
+Commit analysé : a1ff18575c5000cc50373e851e2bbe7a2b919245.
+Mac Swift0.1.10 et Desktop Python0.2.1 sont des implémentations distinctes.
+Le Desktop upstream est plus limité et n’a pas la roue globale ni le panneau
+Mac. Les données de style viennent du Swift, pas des GIF illustratifs du README.
+La correspondance binaire/source n’est pas prouvée par un build reproductible.
+
+Repris/adapté : rayons64/150, espace4, arrondis tangents, capsule centrale120x34,
+accent#FF5C00 ; ouverture de0,84 vers1 ; survol1,025 et déplacement4px ; menus
+convertir/outils/actions ; panneau centré en haut, résultats glissables ; mascotte
+vectorielle avec états ; thème clair/sombre, réduction des mouvements et tray.
+
+Remplacements : SwiftUI/AppKit -> Qt/Win32 ; ImageIO/CoreImage -> Pillow/HEIF ;
+PDFKit -> PyMuPDF/pdf2docx ; AVFoundation -> FFmpeg ; Office -> LibreOffice/Pandoc.
+La roue Qt conserve ses propres événements et sa pagination. L’interpolation
+OutBack approche le ressort ; elle n’est pas une reproduction physique exacte.
+
+4. VÉRIFICATION
+
+Moteur : 88 tests réussis dans engine-final.xml, plus 1 test d’annulation réelle
+d’un processus et de son enfant dans cancellation.xml. Couverture : formats
+photo/audio/vidéo, PDF/Office, sous-titres, archives, collisions, traversée de
+chemins, annulation, lot partiellement invalide, intégrité des originaux.
+Les Office vérifient de vrais PDF/DOCX/ODT, pas seulement un fichier non vide.
+
+Outils complémentaires : 33 tests réussis. Vérification de pixels masqués avant,
+pendant et après l’intervalle vidéo, audio du visualiseur, champs EXIF/PDF relus,
+pixels JPEG préservés, empreinte SHA256 exacte, duplication et collisions.
+
+Interface : 6 tests Qt réussis, processus terminé avec code0 après nettoyage
+des fenêtres. Dépôt/selecteur, clavier/pagination, édition visuelle, file et
+historique d’erreur/succès, options UI réellement envoyées aux moteurs.
+Un avertissement de dépréciation du constructeur QDragEnterEvent dans le test
+reste présent ; il n’affecte pas le programme livré.
+Tab et Échap sont routés vers la roue flottante même quand l’atelier garde le
+focus ; les tests vérifient les deux fenêtres et un seul changement par appui.
+
+Essai Windows réel : fenêtre ouverte, PNG de démonstration déposé dans la roue,
+secteur JPG puis dépôt/clic ; résultat JPG et historique de réussite constatés.
+La commande F8 affiche une roue flottante transparente. Aucun document personnel
+n’a servi aux conversions de test. Le geste Maj maintenu pendant un glissement
+depuis une autre fenêtre Explorer n’est pas certifié par cet essai.
+La dernière compilation Zeste.exe a aussi été ouverte dans Windows : F8 affiche
+la roue, Tab passe de Convertir à Outils en un appui et Échap la ferme. Ces
+trois actions ont été observées dans la fenêtre réelle du portable final.
+
+Le volet de partage a été compilé et son mode --check exécuté ; aucun envoi à
+une application ou un destinataire tiers n’a été effectué.
+
+Les résultats de vérification du portable sont dans tests/artifacts et dans
+le rapport livré avec la distribution ; ils sont distincts des tests source.
+Les neuf scénarios du portable utilisent un PATH limité à System32 et des
+profils isolés : démarrage réel avec code0, identité des sources/inventaire,
+JPG/HEIC, DOCX vers PDF avec LibreOffice privé, PDF vers DOCX, Markdown vers EPUB
+avec Pandoc privé, audio vers MP3 avec FFmpeg privé, archive7z et réextraction.
+Les sources et SHA-256 de construction sont inscrits dans .zeste-generated.json.
+
+5. DIFFÉRENCES RESTANTES
+
+Pas d’API Apple ni Liquid Glass natif ; roue globale limitée à Explorer/Bureau ;
+pas d’éditeur vidéo avec timeline, ni de PDF réorganisé par vignettes ; champs
+numériques à la place. Les fonctions OCR/IA/Pages/AirDrop ne sont pas fournies.
+Sortie PowerPoint à partir d’un PDF en images, Excel sur tableaux détectables,
+compression à taille indicative, formats/codages réels soumis aux moteurs.
+Ces limites sont aussi indiquées dans README.txt et dans les dialogues concernés.

@@ -1,0 +1,17 @@
+# Runtime direct dependencies, validated on Python 3.12 x64 / Windows.
+PySide6==6.12.0
+defusedxml==0.7.1
+Pillow==13.0.0
+pillow-heif==1.8.1
+PyMuPDF==2.0
+imageio-ffmpeg==0.6.0
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+python-docx==1.2.0
+openpyxl==3.1.5
+python-pptx==1.0.2
+EbookLib==0.20
+pypandoc-binary==1.17
+pdf2docx==0.5.13
+rarfile==4.5
+py7zr==1.1.4

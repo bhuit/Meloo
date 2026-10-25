@@ -1,0 +1,31 @@
+﻿MELOO 0.4.2 — GUIDE RAPIDE
+
+Lancez Meloo depuis le menu Démarrer ou le raccourci du Bureau.
+Son icône apparaît près de l'horloge, éventuellement sous la flèche des icônes masquées.
+
+1. Commencez à glisser un fichier depuis l'Explorateur Windows.
+2. Appuyez sur Ctrl pendant le glissement : la roue apparaît.
+3. Déposez le fichier sur le format souhaité, Compresser ou Créer ZIP.
+
+Créer ZIP reste en haut pour tous les fichiers et dossiers.
+Autres formats affiche les destinations supplémentaires après un court survol.
+Tab permet de passer aux Outils et aux Actions.
+Maintenez le bouton gauche sur le centre de la roue pour la déplacer.
+
+Clic droit sur l'icône : Réglages, Fonctionnalités, Atelier ou Quitter.
+Réglages > Orange / Melina permet de changer de thème.
+Le démarrage avec Windows est une option des Réglages.
+
+VOS DONNÉES
+Les résultats sont créés séparément des fichiers originaux.
+Les préférences restent dans %LOCALAPPDATA%\Zeste (nom historique conservé).
+La désinstallation ne supprime pas ces préférences ni vos résultats.
+Terminez les conversions et quittez Meloo avant de le désinstaller.
+
+INSTALLATION ET DÉSINSTALLATION
+L'assistant installe pour votre compte Windows, sans droits administrateur.
+La désinstallation est accessible dans Paramètres > Applications > Applications installées.
+Pour réinstaller ou mettre à jour, relancez l'assistant dans le même dossier Meloo.
+
+Le paquet complet contient les moteurs nécessaires, les licences et les sources.
+L'assistant est construit avec Inno Setup : https://jrsoftware.org/

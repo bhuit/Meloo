@@ -1,0 +1,49 @@
+Meloo Windows 0.4.2 — reconstruction indépendante, octobre 2026.
+
+Le code propre à Meloo est distribué sous GNU AGPL version 3 ou ultérieure,
+voir LICENSE.txt. Les bibliothèques et composants tiers conservent leurs licences.
+PyMuPDF indique AGPL-3.0 dans les métadonnées de son paquet ; aucune licence
+commerciale Artifex n’est fournie. Le programme combiné est fourni avec son code.
+
+La géométrie des secteurs dans zeste/radial.py est adaptée de
+NativeApp/Sources/Radial/RadialView.swift, Open Tangerine,
+commit a1ff18575c5000cc50373e851e2bbe7a2b919245.
+Cette partie garde GPL-3.0-only, combinée avec les modules AGPL conformément
+à la clause de combinaison prévue par GPLv3/AGPLv3.
+
+Open Tangerine additions: Copyright 2026 Sintax Error Private Limited.
+Native app substantially based on Satsuma, Copyright 2026 plyght, MIT.
+Attributions upstream, dont l’inspiration DragShift, conservées dans licenses/.
+
+Les outils supplémentaires Windows, intégrations Qt/Win32, illustrations
+vectorielles et scripts de construction ont été écrits pour cette reconstruction.
+Aucun code ni logo de l’application commerciale Tangerine de LEAP Studio n’est
+présent. Aucun lien commercial ou approbation de cet éditeur n’est revendiqué.
+
+Dépendances principales : Python/PSF, Qt/PySide (LGPL/GPL), Pillow/MIT-CMU,
+pillow-heif/BSD et codecs associés, MuPDF/PyMuPDF/AGPL, FFmpeg et ses codecs,
+Pandoc/GPL, LibreOffice/MPL-LGPL, OpenCV/Apache et bibliothèques Python associées,
+.NET/MIT et Windows SDK. Les textes disponibles dans les paquets et l’inventaire
+de construction sont conservés dans licenses/python-environment/.
+Les binaires Qt restent dans des DLL séparées ; aucun mécanisme n’interdit leur
+remplacement par une version compatible. Aucun moteur tiers n’a été modifié.
+
+Sources du port : dossier source du portable et archive Sources-Meloo-0.4.2.zip.
+Build : build_portable.py, requirements.txt, requirements-dev.txt et projet C#.
+Références de sources tierces :
+https://github.com/sintaxerrorpvtltd/Open-Tangerine
+https://code.qt.io/cgit/pyside/pyside-setup.git/
+https://code.qt.io/cgit/qt/
+https://github.com/pymupdf/PyMuPDF
+https://github.com/ArtifexSoftware/mupdf
+https://github.com/imageio/imageio-ffmpeg
+https://github.com/FFmpeg/FFmpeg
+https://github.com/jgm/pandoc
+https://git.libreoffice.org/core
+https://github.com/dotnet/runtime
+
+Pour redistribuer un build, conserver les notices et licences des composants,
+les sources correspondantes et leurs obligations respectives. Cette livraison
+locale n’est ni signée par un certificat éditeur ni publiée sur un store.
+
+Publication 0.4.2 : notices actualisées, scripts Inno Setup inclus et nettoyage PDF conservant les mentions de logiciel et de droits. Les auteurs tiers gardent leurs droits et licences. Voir docs/THIRD_PARTY.md pour les versions et les sources des dépendances.

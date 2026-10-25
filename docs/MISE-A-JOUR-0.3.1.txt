@@ -1,0 +1,17 @@
+ZESTE 0.3.1 — MENU ET DÉPLACEMENT DE LA ROUE
+
+Le lancement Windows masqué pouvait laisser l'atelier invisible malgré la
+sélection de Réglages, Fonctionnalités ou Atelier depuis l'icône orange.
+L'affichage vérifie désormais la visibilité Windows réelle. La même protection
+s'applique à la roue, au panneau de résultats et aux dialogues des outils.
+Atelier avancé ouvre toujours l'atelier ; Derniers résultats ouvre l'historique
+quand aucun résultat n'est encore disponible dans la session.
+
+Pour déplacer la roue : maintenir le bouton gauche sur son centre, déplacer
+la souris puis relâcher. Le déplacement ne change pas de menu et ne lance
+aucune opération. Un clic simple au centre continue à changer de menu.
+La roue reste à l'intérieur de la zone utilisable de l'écran du pointeur.
+Le prochain glissement de fichier + Ctrl replace la roue près du pointeur.
+
+Le mode résident, les couleurs, l'opacité et les préférences sont conservés.
+Le correctif crée une sauvegarde de la version 0.3.0 avant le remplacement.

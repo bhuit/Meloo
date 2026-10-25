@@ -1,0 +1,1293 @@
+{
+  "scope": "Build environment source references; see build_portable.py exclusions and docs/THIRD_PARTY.md for native engines.",
+  "packages": [
+    {
+      "name": "altgraph",
+      "version": "0.17.5",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/altgraph/0.17.5/",
+      "sources": [
+        {
+          "filename": "altgraph-0.17.5.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/7e/f8/97fdf103f38fed6792a1601dbc16cc8aac56e7459a9fff08c812d8ae177a/altgraph-0.17.5.tar.gz",
+          "sha256": "c87b395dd12fabde9c99573a9749d67da8d29ef9de0125c7f536699b4a9bc9e7",
+          "bytes": 48428
+        }
+      ],
+      "project_urls": {
+        "Documentation": "https://altgraph.readthedocs.io/en/latest/",
+        "Download": "http://pypi.python.org/pypi/altgraph",
+        "Homepage": "https://altgraph.readthedocs.io",
+        "Issue tracker": "https://github.com/ronaldoussoren/altgraph/issues",
+        "Repository": "https://github.com/ronaldoussoren/altgraph"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "backports.zstd",
+      "version": "1.8.0",
+      "license": "PSF-2.0",
+      "pypi": "https://pypi.org/project/backports.zstd/1.8.0/",
+      "sources": [
+        {
+          "filename": "backports_zstd-1.8.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/ff/9c/13569626440e88f09d16f43ec1c2aa0d10a523be2811414580d1cfb7c9f3/backports_zstd-1.8.0.tar.gz",
+          "sha256": "9dae4f4c481716e3db473d667457b4f508ff7459c0931b567a5c9677fb3db316",
+          "bytes": 1006566
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/rogdham/backports.zstd",
+        "Source": "https://github.com/rogdham/backports.zstd"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "beautifulsoup4",
+      "version": "4.15.0",
+      "license": "MIT License",
+      "pypi": "https://pypi.org/project/beautifulsoup4/4.15.0/",
+      "sources": [
+        {
+          "filename": "beautifulsoup4-4.15.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/43/65/318323f98dbee45d42dff61d8f047181bc6f2268a9068cfad035a46be5af/beautifulsoup4-4.15.0.tar.gz",
+          "sha256": "288e3ca7d54b06f2ac191970bc275c1939cb46d450b255bf6718b04aa37ab4f7",
+          "bytes": 632571
+        }
+      ],
+      "project_urls": {
+        "Download": "https://www.crummy.com/software/BeautifulSoup/bs4/download/",
+        "Homepage": "https://www.crummy.com/software/BeautifulSoup/bs4/"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "brotli",
+      "version": "1.2.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/brotli/1.2.0/",
+      "sources": [
+        {
+          "filename": "brotli-1.2.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/f7/16/c92ca344d646e71a43b8bb353f0a6490d7f6e06210f8554c8f874e454285/brotli-1.2.0.tar.gz",
+          "sha256": "e310f77e41941c13340a95976fe66a8a95b01e783d430eeaf7a2f87e0a57dd0a",
+          "bytes": 7388632
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/google/brotli"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "license": null,
+      "pypi": "https://pypi.org/project/colorama/0.4.6/",
+      "sources": [
+        {
+          "filename": "colorama-0.4.6.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz",
+          "sha256": "08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44",
+          "bytes": 27697
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/tartley/colorama"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "license": "PSFL",
+      "pypi": "https://pypi.org/project/defusedxml/0.7.1/",
+      "sources": [
+        {
+          "filename": "defusedxml-0.7.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/0f/d5/c66da9b79e5bdb124974bfe172b4daf3c984ebd9c2a06e2b8a4dc7331c72/defusedxml-0.7.1.tar.gz",
+          "sha256": "1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69",
+          "bytes": 75520
+        }
+      ],
+      "project_urls": {
+        "Download": "https://pypi.python.org/pypi/defusedxml",
+        "Homepage": "https://github.com/tiran/defusedxml"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "EbookLib",
+      "version": "0.20",
+      "license": "GNU Affero General Public License",
+      "pypi": "https://pypi.org/project/EbookLib/0.20/",
+      "sources": [
+        {
+          "filename": "ebooklib-0.20.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/77/85/322e8882a582d4b707220d1929cfb74c125f2ba513991edbce40dbc462de/ebooklib-0.20.tar.gz",
+          "sha256": "35e2f9d7d39907be8d39ae2deb261b19848945903ae3dbb6577b187ead69e985",
+          "bytes": 127066
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/aerkalov/ebooklib/issues",
+        "Documentation": "https://ebooklib.readthedocs.io",
+        "Homepage": "https://github.com/aerkalov/ebooklib",
+        "Source": "https://github.com/aerkalov/ebooklib"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "et_xmlfile",
+      "version": "2.0.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/et_xmlfile/2.0.0/",
+      "sources": [
+        {
+          "filename": "et_xmlfile-2.0.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/d3/38/af70d7ab1ae9d4da450eeec1fa3918940a5fafb9055e934af8d6eb0c2313/et_xmlfile-2.0.0.tar.gz",
+          "sha256": "dab3f4764309081ce75662649be815c4c9081e88f0837825f90fd28317d4da54",
+          "bytes": 17234
+        }
+      ],
+      "project_urls": {
+        "Documentation": "https://openpyxl.pages.heptapod.net/et_xmlfile/",
+        "Homepage": "https://foss.heptapod.net/openpyxl/et_xmlfile",
+        "Source": "https://foss.heptapod.net/openpyxl/et_xmlfile",
+        "Tracker": "https://foss.heptapod.net/openpyxl/et_xmfile/-/issues"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "fire",
+      "version": "0.7.1",
+      "license": "Apache-2.0",
+      "pypi": "https://pypi.org/project/fire/0.7.1/",
+      "sources": [
+        {
+          "filename": "fire-0.7.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/c0/00/f8d10588d2019d6d6452653def1ee807353b21983db48550318424b5ff18/fire-0.7.1.tar.gz",
+          "sha256": "3b208f05c736de98fb343310d090dcc4d8c78b2a89ea4f32b837c586270a9cbf",
+          "bytes": 88720
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/google/python-fire",
+        "Repository": "https://github.com/google/python-fire"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "flatbuffers",
+      "version": "25.12.19",
+      "license": "Apache 2.0",
+      "pypi": "https://pypi.org/project/flatbuffers/25.12.19/",
+      "sources": [],
+      "project_urls": {
+        "Documentation": "https://google.github.io/flatbuffers/",
+        "Homepage": "https://google.github.io/flatbuffers/",
+        "Source": "https://github.com/google/flatbuffers"
+      },
+      "status": "upstream_source_required"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.67.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/fonttools/4.67.0/",
+      "sources": [
+        {
+          "filename": "fonttools-4.67.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/94/36/102e180f8f5dbaee88b26595b01ca8aa80bf4e62128d9aa94265b3996c96/fonttools-4.67.0.tar.gz",
+          "sha256": "3cb57e6600ca77c0b1729cf8adc23bc0652633a37f18cfa934d9c7bc3de25519",
+          "bytes": 3750028
+        }
+      ],
+      "project_urls": {
+        "Homepage": "http://github.com/fonttools/fonttools"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "imageio-ffmpeg",
+      "version": "0.6.0",
+      "license": "BSD-2-Clause",
+      "pypi": "https://pypi.org/project/imageio-ffmpeg/0.6.0/",
+      "sources": [
+        {
+          "filename": "imageio_ffmpeg-0.6.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/44/bd/c3343c721f2a1b0c9fc71c1aebf1966a3b7f08c2eea8ed5437a2865611d6/imageio_ffmpeg-0.6.0.tar.gz",
+          "sha256": "e2556bed8e005564a9f925bb7afa4002d82770d6b08825078b7697ab88ba1755",
+          "bytes": 25210
+        }
+      ],
+      "project_urls": {
+        "Download": "http://pypi.python.org/pypi/imageio-ffmpeg",
+        "Homepage": "https://github.com/imageio/imageio-ffmpeg"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "inflate64",
+      "version": "1.0.4",
+      "license": "LGPL-2.1-or-later",
+      "pypi": "https://pypi.org/project/inflate64/1.0.4/",
+      "sources": [
+        {
+          "filename": "inflate64-1.0.4.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/3e/f3/41bb2901543abe7aad0b0b0284ae5854bb75f848cf406bf8a046bf525f67/inflate64-1.0.4.tar.gz",
+          "sha256": "b398c686960c029777afc0ed281a86f66adb956cfc3fbf6667cc6453f7b407ce",
+          "bytes": 902542
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/miurahr/inflate64/issues",
+        "Changelog": "https://inflate64.readthedocs.io/en/latest/changelog.html",
+        "Documentation": "https://inflate64.readthedocs.io/en/stable/",
+        "Homepage": "https://inflate64.readthedocs.io/",
+        "Source": "https://github.com/miurahr/inflate64"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/iniconfig/2.3.1/",
+      "sources": [
+        {
+          "filename": "iniconfig-2.3.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/01/e1/2069291243c926a2ff1cd706c7f3eeb9b62144bf60f77c9fb9ff2fb26bd3/iniconfig-2.3.1.tar.gz",
+          "sha256": "67f4b9c50da0dedf52af349e7749a80a9057a5031199791b906c3bb3ae878960",
+          "bytes": 21209
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/pytest-dev/iniconfig"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3",
+      "license": "BSD-3-Clause",
+      "pypi": "https://pypi.org/project/lxml/6.1.3/",
+      "sources": [
+        {
+          "filename": "lxml-6.1.3.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/23/ad/28ecd7cb894d172f3c9c80a075eeeb2017ac62e3632cee05a5f9493547eb/lxml-6.1.3.tar.gz",
+          "sha256": "45222d94ddd511536f3b2f7d9deae3b2339b4ce0f075f1ca25703b07cad9dd21",
+          "bytes": 4211198
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://bugs.launchpad.net/lxml",
+        "Homepage": "https://lxml.de/",
+        "Source": "https://github.com/lxml/lxml"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "Markdown",
+      "version": "3.11.2",
+      "license": "BSD-3-Clause",
+      "pypi": "https://pypi.org/project/Markdown/3.11.2/",
+      "sources": [
+        {
+          "filename": "markdown-3.11.2.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/f4/32/0b4d0297064244f04af4331b65de16237cc3cce07474171ee14222a28981/markdown-3.11.2.tar.gz",
+          "sha256": "87bf5d90f2d2882e2c02fcda182c2800456b985bff38913867c49706481514b0",
+          "bytes": 491445
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://python-markdown.github.io/changelog/",
+        "Documentation": "https://Python-Markdown.github.io/",
+        "Homepage": "https://Python-Markdown.github.io/",
+        "Issue Tracker": "https://github.com/Python-Markdown/markdown/issues",
+        "Repository": "https://github.com/Python-Markdown/markdown"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "multivolumefile",
+      "version": "0.2.3",
+      "license": "LGPL-2.1+",
+      "pypi": "https://pypi.org/project/multivolumefile/0.2.3/",
+      "sources": [
+        {
+          "filename": "multivolumefile-0.2.3.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/50/f0/a7786212b5a4cb9ba05ae84a2bbd11d1d0279523aea0424b6d981d652a14/multivolumefile-0.2.3.tar.gz",
+          "sha256": "a0648d0aafbc96e59198d5c17e9acad7eb531abea51035d08ce8060dcad709d6",
+          "bytes": 77984
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/miurahr/multivolume"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "networkx",
+      "version": "3.7",
+      "license": "BSD-3-Clause",
+      "pypi": "https://pypi.org/project/networkx/3.7/",
+      "sources": [
+        {
+          "filename": "networkx-3.7.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/dc/76/3af777226b63a5e64a6b36b1ec5855c14e2b94a37096d4760e595fc43511/networkx-3.7.tar.gz",
+          "sha256": "fd77a511bd90f39f3d016351345b52cf5319b813bdca01de3f755d3cca62e96a",
+          "bytes": 1866482
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/networkx/networkx/issues",
+        "Documentation": "https://networkx.org/documentation/stable/",
+        "Homepage": "https://networkx.org/",
+        "Source Code": "https://github.com/networkx/networkx"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4",
+      "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "pypi": "https://pypi.org/project/numpy/2.5.4/",
+      "sources": [
+        {
+          "filename": "numpy-2.5.4.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/95/b0/c7453d0b6e2073c3264468b106ee1563750cecc910965e67357e3698c83e/numpy-2.5.4.tar.gz",
+          "sha256": "9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a",
+          "bytes": 20866315
+        }
+      ],
+      "project_urls": {
+        "documentation": "https://numpy.org/doc/",
+        "download": "https://pypi.org/project/numpy/#files",
+        "homepage": "https://numpy.org",
+        "release notes": "https://numpy.org/doc/stable/release",
+        "source": "https://github.com/numpy/numpy",
+        "tracker": "https://github.com/numpy/numpy/issues"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "opencv-python-headless",
+      "version": "5.0.0.93",
+      "license": "Apache 2.0",
+      "pypi": "https://pypi.org/project/opencv-python-headless/5.0.0.93/",
+      "sources": [
+        {
+          "filename": "opencv_python_headless-5.0.0.93.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/1d/99/76b7c80252aa83c1af16393454aafd125a0287101afe8deb0a6821af0e30/opencv_python_headless-5.0.0.93.tar.gz",
+          "sha256": "b82f9831daab90b725c7c1ee1b36cb5732c367096ac76d119e64e14eb70d5f3c",
+          "bytes": 81817738
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/opencv/opencv-python"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/openpyxl/3.1.5/",
+      "sources": [
+        {
+          "filename": "openpyxl-3.1.5.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/3d/f9/88d94a75de065ea32619465d2f77b29a0469500e99012523b91cc4141cd1/openpyxl-3.1.5.tar.gz",
+          "sha256": "cf0e3cf56142039133628b5acffe8ef0c12bc902d2aadd3e0fe5878dc08d1050",
+          "bytes": 186464
+        }
+      ],
+      "project_urls": {
+        "Documentation": "https://openpyxl.readthedocs.io/en/stable/",
+        "Homepage": "https://openpyxl.readthedocs.io",
+        "Source": "https://foss.heptapod.net/openpyxl/openpyxl",
+        "Tracker": "https://foss.heptapod.net/openpyxl/openpyxl/-/issues"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "pypi": "https://pypi.org/project/packaging/26.3/",
+      "sources": [
+        {
+          "filename": "packaging-26.3.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/7d/fa/3944b40b07da9ce895c0e6303a5ab7d53da063554f534556b134a54d6093/packaging-26.3.tar.gz",
+          "sha256": "94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79",
+          "bytes": 313412
+        }
+      ],
+      "project_urls": {
+        "Documentation": "https://packaging.pypa.io/",
+        "Source": "https://github.com/pypa/packaging"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pdf2docx",
+      "version": "0.5.13",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/pdf2docx/0.5.13/",
+      "sources": [
+        {
+          "filename": "pdf2docx-0.5.13.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/96/02/0b97863cc45761f6d076d2973038c79460b4364b49ea4cc2f015a2e8c1d5/pdf2docx-0.5.13.tar.gz",
+          "sha256": "75eff485d4fdcd28237783a65c1bc5e9eaf9fbc747fcacee6c5c16c8ffa7a6a9",
+          "bytes": 18315032
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://artifex.com/"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/pefile/2024.8.26/",
+      "sources": [
+        {
+          "filename": "pefile-2024.8.26.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/03/4f/2750f7f6f025a1507cd3b7218691671eecfd0bbebebe8b39aa0fe1d360b8/pefile-2024.8.26.tar.gz",
+          "sha256": "3ff6c5d8b43e8c37bb6e6dd5085658d658a7a0bdcd20b6a07b1fcfc1c4e9d632",
+          "bytes": 76008
+        }
+      ],
+      "project_urls": {
+        "Download": "https://github.com/erocarrera/pefile/releases/download/v2024.8.26/pefile-2024.8.26.tar.gz",
+        "Homepage": "https://github.com/erocarrera/pefile"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0",
+      "license": "MIT-CMU",
+      "pypi": "https://pypi.org/project/pillow/13.0.0/",
+      "sources": [
+        {
+          "filename": "pillow-13.0.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/ce/a4/9cc30690a394a8305e8be4c9036aa16d0dfddadd09079860b582f562496d/pillow-13.0.0.tar.gz",
+          "sha256": "cdcd1ba258178f7356d74170c9a81ba4eab6a5d55748bc402a5a2a6fe6be3510",
+          "bytes": 47058631
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/python-pillow/Pillow/releases",
+        "Documentation": "https://pillow.readthedocs.io",
+        "Funding": "https://tidelift.com/lifter/search/pypi/pillow",
+        "Homepage": "https://python-pillow.org",
+        "Mastodon": "https://fosstodon.org/@pillow",
+        "Release notes": "https://pillow.readthedocs.io/en/stable/releasenotes/index.html",
+        "Security": "https://pillow.readthedocs.io/en/stable/handbook/security.html",
+        "Source": "https://github.com/python-pillow/Pillow"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pillow_heif",
+      "version": "1.8.1",
+      "license": "BSD-3-Clause",
+      "pypi": "https://pypi.org/project/pillow_heif/1.8.1/",
+      "sources": [
+        {
+          "filename": "pillow_heif-1.8.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/44/c1/82145984920ca055675af2c2795bd30da6f7461215c41f3c1eacb3d66353/pillow_heif-1.8.1.tar.gz",
+          "sha256": "521ebffb8a181d56c3904e5a61f20903edee0d9d3275967b8fb345f866215c06",
+          "bytes": 17395786
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/bigcat88/pillow_heif/blob/master/CHANGELOG.md",
+        "Documentation": "https://pillow-heif.readthedocs.io",
+        "Homepage": "https://github.com/bigcat88/pillow_heif",
+        "Source": "https://github.com/bigcat88/pillow_heif"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pip",
+      "version": "25.0.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/pip/25.0.1/",
+      "sources": [
+        {
+          "filename": "pip-25.0.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/70/53/b309b4a497b09655cb7e07088966881a57d082f48ac3cb54ea729fd2c6cf/pip-25.0.1.tar.gz",
+          "sha256": "88f96547ea48b940a3a385494e181e29fb8637898f88d88737c5049780f196ea",
+          "bytes": 1950850
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://pip.pypa.io/en/stable/news/",
+        "Documentation": "https://pip.pypa.io",
+        "Homepage": "https://pip.pypa.io/",
+        "Source": "https://github.com/pypa/pip"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/pluggy/1.7.0/",
+      "sources": [
+        {
+          "filename": "pluggy-1.7.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/bf/db/7fc19e6f2dc92a966727031389fc2e08b558f0f25eb7403c1119ad4713cd/pluggy-1.7.0.tar.gz",
+          "sha256": "d1eaa46ebb595891b860ab086b4d09c8588af65ebd4361b8e8f4bb8920b90ba8",
+          "bytes": 123304
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://pluggy.readthedocs.io/en/latest/changelog.html",
+        "Documentation": "https://pluggy.readthedocs.io/",
+        "Funding": "https://tidelift.com/subscription/pkg/pypi-pluggy",
+        "Homepage": "https://github.com/pytest-dev/pluggy",
+        "Issues": "https://github.com/pytest-dev/pluggy/issues",
+        "Repository": "https://github.com/pytest-dev/pluggy"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.36.2",
+      "license": "3-Clause BSD License",
+      "pypi": "https://pypi.org/project/protobuf/7.36.2/",
+      "sources": [
+        {
+          "filename": "protobuf-7.36.2.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/d9/89/5b8517baa72f84a67b8a307ba953c91057af618bf40bf676f3c03551f8f0/protobuf-7.36.2.tar.gz",
+          "sha256": "497d0463ff3316681da6c0b9e8d06cb465d61abce00b613ab42226175644d1bb",
+          "bytes": 512737
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://developers.google.com/protocol-buffers/"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "license": "BSD-3-Clause",
+      "pypi": "https://pypi.org/project/psutil/7.2.2/",
+      "sources": [
+        {
+          "filename": "psutil-7.2.2.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/aa/c6/d1ddf4abb55e93cebc4f2ed8b5d6dbad109ecb8d63748dd2b20ab5e57ebe/psutil-7.2.2.tar.gz",
+          "sha256": "0746f5f8d406af344fd547f1c8daa5f5c33dbc293bb8d6a16d80b4bb88f59372",
+          "bytes": 493740
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/giampaolo/psutil"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "py7zr",
+      "version": "1.1.4",
+      "license": "LGPL-2.1-or-later",
+      "pypi": "https://pypi.org/project/py7zr/1.1.4/",
+      "sources": [
+        {
+          "filename": "py7zr-1.1.4.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/d6/31/d5469ec310b57c730785068c227caf2263391be846ae5e99488f69b394eb/py7zr-1.1.4.tar.gz",
+          "sha256": "7674697559bd06b697bf6e8249985cee6dc704a4b07b8e11f24d0b1695707c3e",
+          "bytes": 76503
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/miurahr/py7zr/issues",
+        "Changelog": "https://py7zr.readthedocs.io/en/latest/Changelog.html",
+        "Documentation": "https://py7zr.readthedocs.io/en/stable/",
+        "Homepage": "https://py7zr.readthedocs.io/",
+        "Source": "https://github.com/miurahr/py7zr"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pybcj",
+      "version": "1.0.8",
+      "license": "LGPL-2.1-or-later",
+      "pypi": "https://pypi.org/project/pybcj/1.0.8/",
+      "sources": [
+        {
+          "filename": "pybcj-1.0.8.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/14/c9/e2de4f98c21f2ff9e58047395b6a8e17701a0f2977f0e63f80948f61647f/pybcj-1.0.8.tar.gz",
+          "sha256": "6818270692912d47e81ccd777b7d0ed2ad3a19ef7aaead3735b38048c80bf368",
+          "bytes": 31763
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/miurahr/pybcj/issues",
+        "Changelog": "https://github.com/miurahr/pybcj/blob/main/Changelog.rst",
+        "Homepage": "https://pypi.org/project/pybcj",
+        "Source": "https://github.com/miurahr/pybcj"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pycryptodomex",
+      "version": "3.24.1",
+      "license": "BSD, Public Domain",
+      "pypi": "https://pypi.org/project/pycryptodomex/3.24.1/",
+      "sources": [
+        {
+          "filename": "pycryptodomex-3.24.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/f4/e7/50e72301e32acb73a314e663c2014e1ddefc019d5f434ff14ec89861d664/pycryptodomex-3.24.1.tar.gz",
+          "sha256": "09081666ffc599976c0b8b29caf2cf82212c0f05bed233c8f8ed53e4f6e1d356",
+          "bytes": 4934627
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://www.pycryptodome.org/src/changelog",
+        "Homepage": "https://www.pycryptodome.org",
+        "Source": "https://github.com/Legrandin/pycryptodome/"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "license": "BSD-2-Clause",
+      "pypi": "https://pypi.org/project/Pygments/2.21.0/",
+      "sources": [
+        {
+          "filename": "pygments-2.21.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/49/2e/ced460408999b33da6b31b0021b0f37d329e202d4169aeb164493778f25b/pygments-2.21.0.tar.gz",
+          "sha256": "610ca751c9bc2492b38eb9a38a7fbc93edbbb2d7182edaf34e66ae493dee5c8c",
+          "bytes": 5005329
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/pygments/pygments/issues",
+        "Changelog": "https://github.com/pygments/pygments/blob/master/CHANGES",
+        "Documentation": "https://pygments.org/docs",
+        "Homepage": "https://pygments.org",
+        "Source": "https://github.com/pygments/pygments"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+      "pypi": "https://pypi.org/project/pyinstaller/6.22.3/",
+      "sources": [
+        {
+          "filename": "pyinstaller-6.22.3.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/63/41/f90302845945abd4ed647933ff5ee7c6ac93983187be67f897b6cb613331/pyinstaller-6.22.3.tar.gz",
+          "sha256": "05eb2f5615503e72939a7224d68b4aff572c6b0438ee4a17d0a4b481f399362d",
+          "bytes": 4437180
+        }
+      ],
+      "project_urls": {
+        "Documentation": "https://pyinstaller.org",
+        "Homepage": "https://pyinstaller.org",
+        "Release Notes": "https://pyinstaller.org/en/stable/CHANGES.html",
+        "Source Code": "https://github.com/pyinstaller/pyinstaller"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.9",
+      "license": null,
+      "pypi": "https://pypi.org/project/pyinstaller-hooks-contrib/2026.9/",
+      "sources": [
+        {
+          "filename": "pyinstaller_hooks_contrib-2026.9.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/96/25/e47c6188228281372be7e9911a93931e01ec8798c02c93abd680b9b9521f/pyinstaller_hooks_contrib-2026.9.tar.gz",
+          "sha256": "2748767901acb5cecd1304652b6c7add5bffcff1d71d01207fe24a5d42942a56",
+          "bytes": 180783
+        }
+      ],
+      "project_urls": {
+        "Download": "https://pypi.org/project/pyinstaller-hooks-contrib",
+        "Homepage": "https://github.com/pyinstaller/pyinstaller-hooks-contrib"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pymupdf",
+      "version": "2.0",
+      "license": "Dual Licensed - GNU AFFERO GPL 3.0 or Artifex Commercial License",
+      "pypi": "https://pypi.org/project/pymupdf/2.0/",
+      "sources": [
+        {
+          "filename": "pymupdf-2.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/b0/23/3575cf6652171bba33fd4b41d34ab92c7ee75bb5e5790f5a2a044b9ba49b/pymupdf-2.0.tar.gz",
+          "sha256": "7733136f626fffe98677daa53c906eb45f2eb486a6450dbcfd652cbbd760f1e2",
+          "bytes": 88806289
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://pymupdf.readthedocs.io/en/latest/changes.html",
+        "Documentation": "https://pymupdf.readthedocs.io/",
+        "Source": "https://github.com/pymupdf/pymupdf",
+        "Tracker": "https://github.com/pymupdf/PyMuPDF/issues"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pypandoc_binary",
+      "version": "1.17",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/pypandoc_binary/1.17/",
+      "sources": [],
+      "project_urls": {
+        "Source": "https://github.com/JessicaTegner/pypandoc",
+        "Tracker": "https://github.com/JessicaTegner/pypandoc/issues"
+      },
+      "status": "upstream_source_required"
+    },
+    {
+      "name": "pyppmd",
+      "version": "1.3.1",
+      "license": "LGPL-2.1-or-later",
+      "pypi": "https://pypi.org/project/pyppmd/1.3.1/",
+      "sources": [
+        {
+          "filename": "pyppmd-1.3.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/81/d7/803232913cab9163a1a97ecf2236cd7135903c46ac8d49613448d88e8759/pyppmd-1.3.1.tar.gz",
+          "sha256": "ced527f08ade4408c1bfc5264e9f97ffac8d221c9d13eca4f35ec1ec0c7b6b2e",
+          "bytes": 1351815
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/miurahr/pyppmd/issues",
+        "Changelog": "https://pyppmd.readthedocs.io/en/latest/changelog.html",
+        "Documentation": "https://pyppmd.readthedocs.io/en/stable/",
+        "Homepage": "https://pyppmd.readthedocs.io/",
+        "Source": "https://github.com/miurahr/pyppmd"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "PySide6",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "pypi": "https://pypi.org/project/PySide6/6.12.0/",
+      "sources": [],
+      "project_urls": {
+        "Changelog": "https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Documentation": "https://doc.qt.io/qtforpython",
+        "Homepage": "https://pyside.org",
+        "Repository": "https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Tracker": "https://qt-project.atlassian.net/browse/PYSIDE"
+      },
+      "status": "upstream_source_required"
+    },
+    {
+      "name": "PySide6_Addons",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "pypi": "https://pypi.org/project/PySide6_Addons/6.12.0/",
+      "sources": [],
+      "project_urls": {
+        "Changelog": "https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Documentation": "https://doc.qt.io/qtforpython",
+        "Homepage": "https://pyside.org",
+        "Repository": "https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Tracker": "https://qt-project.atlassian.net/browse/PYSIDE"
+      },
+      "status": "upstream_source_required"
+    },
+    {
+      "name": "PySide6_Essentials",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "pypi": "https://pypi.org/project/PySide6_Essentials/6.12.0/",
+      "sources": [],
+      "project_urls": {
+        "Changelog": "https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Documentation": "https://doc.qt.io/qtforpython",
+        "Homepage": "https://pyside.org",
+        "Repository": "https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Tracker": "https://qt-project.atlassian.net/browse/PYSIDE"
+      },
+      "status": "upstream_source_required"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/pytest/9.1.1/",
+      "sources": [
+        {
+          "filename": "pytest-9.1.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/e4/47/b9efed96c114afcfa3c9d3fe98a76a1d14c74a9e266d397cf6eb64be5e01/pytest-9.1.1.tar.gz",
+          "sha256": "1088fbde8f2b49d95a549a195707afa7a76a3ce9bcadc26b6d71f0ffda5fe313",
+          "bytes": 1636369
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://docs.pytest.org/en/stable/changelog.html",
+        "Contact": "https://docs.pytest.org/en/stable/contact.html",
+        "Funding": "https://docs.pytest.org/en/stable/sponsor.html",
+        "Homepage": "https://docs.pytest.org/en/latest/",
+        "Source": "https://github.com/pytest-dev/pytest",
+        "Tracker": "https://github.com/pytest-dev/pytest/issues"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "python-docx",
+      "version": "1.2.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/python-docx/1.2.0/",
+      "sources": [
+        {
+          "filename": "python_docx-1.2.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/a9/f7/eddfe33871520adab45aaa1a71f0402a2252050c14c7e3009446c8f4701c/python_docx-1.2.0.tar.gz",
+          "sha256": "7bc9d7b7d8a69c9c02ca09216118c86552704edc23bac179283f2e38f86220ce",
+          "bytes": 5723256
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/python-openxml/python-docx/blob/master/HISTORY.rst",
+        "Documentation": "https://python-docx.readthedocs.org/en/latest/",
+        "Homepage": "https://github.com/python-openxml/python-docx",
+        "Repository": "https://github.com/python-openxml/python-docx"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "python-pptx",
+      "version": "1.0.2",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/python-pptx/1.0.2/",
+      "sources": [
+        {
+          "filename": "python_pptx-1.0.2.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/52/a9/0c0db8d37b2b8a645666f7fd8accea4c6224e013c42b1d5c17c93590cd06/python_pptx-1.0.2.tar.gz",
+          "sha256": "479a8af0eaf0f0d76b6f00b0887732874ad2e3188230315290cd1f9dd9cc7095",
+          "bytes": 10109297
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/scanny/python-pptx/blob/master/HISTORY.rst",
+        "Documentation": "https://python-pptx.readthedocs.io/en/latest/",
+        "Homepage": "https://github.com/scanny/python-pptx",
+        "Repository": "https://github.com/scanny/python-pptx"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "pywin32",
+      "version": "312",
+      "license": "PSF",
+      "pypi": "https://pypi.org/project/pywin32/312/",
+      "sources": [],
+      "project_urls": {
+        "Bugs": "https://github.com/mhammond/pywin32/issues",
+        "Changes": "https://github.com/mhammond/pywin32/blob/main/CHANGES.md",
+        "Docs": "https://mhammond.github.io/pywin32/",
+        "Homepage": "https://github.com/mhammond/pywin32",
+        "Mailing List": "https://mail.python.org/mailman/listinfo/python-win32",
+        "Support Requests": "https://github.com/mhammond/pywin32/discussions"
+      },
+      "status": "upstream_source_required"
+    },
+    {
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "license": "BSD-3-Clause",
+      "pypi": "https://pypi.org/project/pywin32-ctypes/0.2.3/",
+      "sources": [
+        {
+          "filename": "pywin32-ctypes-0.2.3.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/85/9f/01a1a99704853cb63f253eea009390c88e7131c67e66a0a02099a8c917cb/pywin32-ctypes-0.2.3.tar.gz",
+          "sha256": "d162dc04946d704503b2edc4d55f3dba5c1d539ead017afa00142c38b9885755",
+          "bytes": 29471
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/enthought/pywin32-ctypes"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/PyYAML/6.0.3/",
+      "sources": [
+        {
+          "filename": "pyyaml-6.0.3.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz",
+          "sha256": "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f",
+          "bytes": 130960
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/yaml/pyyaml/issues",
+        "CI": "https://github.com/yaml/pyyaml/actions",
+        "Documentation": "https://pyyaml.org/wiki/PyYAMLDocumentation",
+        "Download": "https://pypi.org/project/PyYAML/",
+        "Homepage": "https://pyyaml.org/",
+        "Mailing lists": "http://lists.sourceforge.net/lists/listinfo/yaml-core",
+        "Source Code": "https://github.com/yaml/pyyaml"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "qrcode",
+      "version": "8.2",
+      "license": "BSD",
+      "pypi": "https://pypi.org/project/qrcode/8.2/",
+      "sources": [
+        {
+          "filename": "qrcode-8.2.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/8f/b2/7fc2931bfae0af02d5f53b174e9cf701adbb35f39d69c2af63d4a39f81a9/qrcode-8.2.tar.gz",
+          "sha256": "35c3f2a4172b33136ab9f6b3ef1c00260dd2f66f858f24d88418a015f446506c",
+          "bytes": 43317
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/lincolnloop/python-qrcode"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "rarfile",
+      "version": "4.5",
+      "license": "ISC",
+      "pypi": "https://pypi.org/project/rarfile/4.5/",
+      "sources": [
+        {
+          "filename": "rarfile-4.5.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/b2/eb/33ea5625de4e84144069ea021a282ea3c44ff7bd341b740bcadff028bea7/rarfile-4.5.tar.gz",
+          "sha256": "7425d0afa180f0092db903abb1526a130b36858980aad90b3694f48e41420155",
+          "bytes": 155541
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/markokr/rarfile"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/setuptools/84.2.1/",
+      "sources": [
+        {
+          "filename": "setuptools-84.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/70/b3/c19426f783614d625699a4b247faf628ea9ab1db228674491767b417f9e1/setuptools-84.2.1.tar.gz",
+          "sha256": "3ff8b3b5492a0aa66960f4419365a86b84e013070d4313e4d4a6894f5d64d6bc",
+          "bytes": 1230289
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://setuptools.pypa.io/en/stable/history.html",
+        "Documentation": "https://setuptools.pypa.io/",
+        "Source": "https://github.com/pypa/setuptools"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+      "pypi": "https://pypi.org/project/shiboken6/6.12.0/",
+      "sources": [],
+      "project_urls": {
+        "Changelog": "https://code.qt.io/cgit/pyside/pyside-setup.git/tree/doc/changelogs",
+        "Documentation": "https://doc.qt.io/qtforpython",
+        "Homepage": "https://pyside.org",
+        "Repository": "https://code.qt.io/cgit/pyside/pyside-setup.git/",
+        "Tracker": "https://qt-project.atlassian.net/browse/PYSIDE"
+      },
+      "status": "upstream_source_required"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/six/1.17.0/",
+      "sources": [
+        {
+          "filename": "six-1.17.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz",
+          "sha256": "ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81",
+          "bytes": 34031
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/benjaminp/six"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "soupsieve",
+      "version": "3.0.4",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/soupsieve/3.0.4/",
+      "sources": [
+        {
+          "filename": "soupsieve-3.0.4.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/19/63/0b6bae54546aed98d72f12d09df57b19a287f01c84d22047fa2e23772ab9/soupsieve-3.0.4.tar.gz",
+          "sha256": "924fab84ae21604c19e175e1f39815eb6fa83ba23836e09e9de180925e5bc4c0",
+          "bytes": 119017
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/facelessuser/soupsieve"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "tabulate",
+      "version": "0.10.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/tabulate/0.10.0/",
+      "sources": [
+        {
+          "filename": "tabulate-0.10.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/46/58/8c37dea7bbf769b20d58e7ace7e5edfe65b849442b00ffcdd56be88697c6/tabulate-0.10.0.tar.gz",
+          "sha256": "e2cfde8f79420f6deeffdeda9aaec3b6bc5abce947655d17ac662b126e48a60d",
+          "bytes": 91754
+        }
+      ],
+      "project_urls": {
+        "Homepage": "https://github.com/astanin/python-tabulate"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/termcolor/3.3.0/",
+      "sources": [
+        {
+          "filename": "termcolor-3.3.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/46/79/cf31d7a93a8fdc6aa0fbb665be84426a8c5a557d9240b6239e9e11e35fc5/termcolor-3.3.0.tar.gz",
+          "sha256": "348871ca648ec6a9a983a13ab626c0acce02f515b9e1983332b17af7979521c5",
+          "bytes": 14434
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/termcolor/termcolor/releases",
+        "Homepage": "https://github.com/termcolor/termcolor",
+        "Source": "https://github.com/termcolor/termcolor"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "texttable",
+      "version": "1.7.2",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/texttable/1.7.2/",
+      "sources": [
+        {
+          "filename": "texttable-1.7.2.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/03/19/9590fd39a668ea0a0869493441fe65852246a3ec67616877baad98bcb039/texttable-1.7.2.tar.gz",
+          "sha256": "dc16ea6b35fbf5291ba6ef79d79e37d9b3ca6acd7bae3ca3450488d7c2e19c99",
+          "bytes": 15400
+        }
+      ],
+      "project_urls": {
+        "Download": "https://github.com/foutaise/texttable/archive/v1.7.2.tar.gz",
+        "Homepage": "https://github.com/foutaise/texttable/"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license": "PSF-2.0",
+      "pypi": "https://pypi.org/project/typing_extensions/4.16.0/",
+      "sources": [
+        {
+          "filename": "typing_extensions-4.16.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/f6/cc/6253133b5bb138fc3306cebfbda2c520f545d36b5be2c7255cc528bb45d6/typing_extensions-4.16.0.tar.gz",
+          "sha256": "dc983d19a509c94dba722ee6abd33940f7c05a89e243c47e907eb4db6f1a43e5",
+          "bytes": 113555
+        }
+      ],
+      "project_urls": {
+        "Bug Tracker": "https://github.com/python/typing_extensions/issues",
+        "Changes": "https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+        "Documentation": "https://typing-extensions.readthedocs.io/",
+        "Home": "https://github.com/python/typing_extensions",
+        "Q & A": "https://github.com/python/typing/discussions",
+        "Repository": "https://github.com/python/typing_extensions"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "winrt-runtime",
+      "version": "3.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/winrt-runtime/3.2.1/",
+      "sources": [
+        {
+          "filename": "winrt_runtime-3.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/16/dd/acdd527c1d890c8f852cc2af644aa6c160974e66631289420aa871b05e65/winrt_runtime-3.2.1.tar.gz",
+          "sha256": "c8dca19e12b234ae6c3dadf1a4d0761b51e708457492c13beb666556958801ea",
+          "bytes": 21721
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md",
+        "Documentation": "https://pywinrt.readthedocs.io",
+        "Repository": "https://github.com/pywinrt/pywinrt"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "winrt-Windows.ApplicationModel.DataTransfer",
+      "version": "3.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/winrt-Windows.ApplicationModel.DataTransfer/3.2.1/",
+      "sources": [
+        {
+          "filename": "winrt_windows_applicationmodel_datatransfer-3.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/6e/0d/75d5535fb5520f035be66473134288742f1cd656e89262a60f1b294f5e7c/winrt_windows_applicationmodel_datatransfer-3.2.1.tar.gz",
+          "sha256": "20aa420c12c5518ed7b63e57e4d9e26d73d06954987ba94e672470145ee6f4bb",
+          "bytes": 24612
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md",
+        "Documentation": "https://pywinrt.readthedocs.io",
+        "Repository": "https://github.com/pywinrt/pywinrt"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "winrt-Windows.Foundation",
+      "version": "3.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/winrt-Windows.Foundation/3.2.1/",
+      "sources": [
+        {
+          "filename": "winrt_windows_foundation-3.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/0c/55/098ce7ea0679efcc1298b269c48768f010b6c68f90c588f654ec874c8a74/winrt_windows_foundation-3.2.1.tar.gz",
+          "sha256": "ad2f1fcaa6c34672df45527d7c533731fdf65b67c4638c2b4aca949f6eec0656",
+          "bytes": 30485
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md",
+        "Documentation": "https://pywinrt.readthedocs.io",
+        "Repository": "https://github.com/pywinrt/pywinrt"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "winrt-Windows.Foundation.Collections",
+      "version": "3.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/winrt-Windows.Foundation.Collections/3.2.1/",
+      "sources": [
+        {
+          "filename": "winrt_windows_foundation_collections-3.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/ef/62/d21e3f1eeb8d47077887bbf0c3882c49277a84d8f98f7c12bda64d498a07/winrt_windows_foundation_collections-3.2.1.tar.gz",
+          "sha256": "0eff1ad0d8d763ad17e9e7bbd0c26a62b27215016393c05b09b046d6503ae6d5",
+          "bytes": 16043
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md",
+        "Documentation": "https://pywinrt.readthedocs.io",
+        "Repository": "https://github.com/pywinrt/pywinrt"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "winrt-Windows.Storage",
+      "version": "3.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/winrt-Windows.Storage/3.2.1/",
+      "sources": [
+        {
+          "filename": "winrt_windows_storage-3.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/cc/a6/430d4881d214647e2e6c95bb2894bb9202c98bff5f82eca6ba5b5e5d09a1/winrt_windows_storage-3.2.1.tar.gz",
+          "sha256": "c7d1c2326fd842babbf98d944d4991b7592ee8433c762af0a8b47696437fae0b",
+          "bytes": 48309
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md",
+        "Documentation": "https://pywinrt.readthedocs.io",
+        "Repository": "https://github.com/pywinrt/pywinrt"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "winrt-Windows.Storage.Streams",
+      "version": "3.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/winrt-Windows.Storage.Streams/3.2.1/",
+      "sources": [
+        {
+          "filename": "winrt_windows_storage_streams-3.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/00/50/f4488b07281566e3850fcae1021f0285c9653992f60a915e15567047db63/winrt_windows_storage_streams-3.2.1.tar.gz",
+          "sha256": "476f522722751eb0b571bc7802d85a82a3cae8b1cce66061e6e758f525e7b80f",
+          "bytes": 34335
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md",
+        "Documentation": "https://pywinrt.readthedocs.io",
+        "Repository": "https://github.com/pywinrt/pywinrt"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "winrt-Windows.System",
+      "version": "3.2.1",
+      "license": "MIT",
+      "pypi": "https://pypi.org/project/winrt-Windows.System/3.2.1/",
+      "sources": [
+        {
+          "filename": "winrt_windows_system-3.2.1.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/55/00/7fd3d80d670dff63c7023d05456af3f6660fd2ca6dbaab8ee00b2acaaba0/winrt_windows_system-3.2.1.tar.gz",
+          "sha256": "7d4a20bbee26e822b6299ee1b04b1c660f8a1fc685ff63b0472179f9e6b9cc1e",
+          "bytes": 38009
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md",
+        "Documentation": "https://pywinrt.readthedocs.io",
+        "Repository": "https://github.com/pywinrt/pywinrt"
+      },
+      "status": "sdist_available"
+    },
+    {
+      "name": "xlsxwriter",
+      "version": "3.3.0",
+      "license": "BSD-2-Clause",
+      "pypi": "https://pypi.org/project/xlsxwriter/3.3.0/",
+      "sources": [
+        {
+          "filename": "xlsxwriter-3.3.0.tar.gz",
+          "url": "https://files.pythonhosted.org/packages/93/f2/98b45e52bc0330256bd4bb039cc44b28f838ad85602ce4f358f355d501bb/xlsxwriter-3.3.0.tar.gz",
+          "sha256": "0a6bf2e4dcec8b29dd9b86d1e622132134c48bb6fd10f925fdfb229f0447199a",
+          "bytes": 221380
+        }
+      ],
+      "project_urls": {
+        "Changelog": "https://github.com/jmcnamara/XlsxWriter/blob/main/Changes",
+        "Documentation": "https://xlsxwriter.readthedocs.io",
+        "Homepage": "https://github.com/jmcnamara/XlsxWriter",
+        "Issues": "https://github.com/jmcnamara/XlsxWriter/issues",
+        "Repository": "https://github.com/jmcnamara/XlsxWriter"
+      },
+      "status": "sdist_available"
+    }
+  ]
+}
