@@ -1,6 +1,8 @@
 ![Meloo : glissez, Ctrl, déposez — Windows bêta](docs/images/meloo-beta.png)
 
-# Meloo pour Windows · BÊTA
+# Meloo — All-in-One File Converter for Windows
+
+**Convertisseur de fichiers tout-en-un pour Windows · BÊTA**
 
 Convertir, compresser et organiser ses fichiers depuis une roue flottante.
 Meloo reste dans la zone de notification : commencez à glisser un fichier depuis
