@@ -466,7 +466,7 @@ class MainWindow(QMainWindow):
         quick_label=label("ACTIONS RAPIDES", "eyebrow");quick_label.setAlignment(Qt.AlignmentFlag.AlignCenter);center.addWidget(quick_label)
         quick=QFrame();quick.setObjectName("quickbar");row=QHBoxLayout(quick);row.setContentsMargins(7,7,7,7);row.setSpacing(6)
         self.quick_compress=button("Compresser",lambda:self.request_operation("compress",self.selected_paths(),quick=True))
-        self.quick_edit=button("Retoucher",lambda:self.request_operation("edit_image",self.selected_paths()))
+        self.quick_edit=button("Retoucher",lambda:self.request_operation("trim" if self.selected_paths() and family(self.selected_paths()[0])=="video" else "edit_image",self.selected_paths()))
         row.addWidget(self.quick_compress);row.addWidget(self.quick_edit);row.addWidget(button("Fonctions",lambda:self.show_page(3)))
         center.addWidget(quick);body.addLayout(center,1)
         right=QVBoxLayout();right.setSpacing(10)
@@ -715,7 +715,9 @@ class MainWindow(QMainWindow):
         self.run_button.setEnabled(bool(self.wheel.items))
         paths=self.selected_paths()
         self.quick_compress.setEnabled(bool(paths) and self.feature_enabled(feature_key(paths,"compress")))
-        self.quick_edit.setEnabled(len(paths)==1 and family(paths[0])=="image" and self.feature_enabled("image/edit_image"))
+        video = len(paths)==1 and family(paths[0])=="video"
+        self.quick_edit.setText("Découper la vidéo" if video else "Retoucher")
+        self.quick_edit.setEnabled(len(paths)==1 and ((video and self.feature_enabled("video/trim")) or (family(paths[0])=="image" and self.feature_enabled("image/edit_image"))))
 
     def set_mode(self, mode):
         self.wheel.set_mode(mode)
@@ -772,6 +774,18 @@ class MainWindow(QMainWindow):
             # A drop is the user's confirmation. In particular PDF -> PPTX
             # needs no modal information dialog behind the hidden workshop.
             options = {"dpi": 200} if family(paths[0]) == "pdf" and op in {"to:png", "to:jpg"} else {}
+        elif op == "trim" and family(paths[0]) == "video":
+            from .video_trimmer import VideoTrimmer
+            if len(paths) != 1:
+                QMessageBox.information(self, "Découper une vidéo", "Sélectionne une seule vidéo pour choisir précisément son extrait.")
+                return
+            dialog = VideoTrimmer(paths[0], self)
+            try:
+                if not self.run_dialog(dialog): return
+                options = dialog.options()
+            finally:
+                dialog.shutdown()
+                dialog.deleteLater()
         elif op in IMAGE_EDITORS:
             from .image_editor import ImageEditor
             if len(paths) != 1:

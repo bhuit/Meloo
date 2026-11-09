@@ -1,5 +1,13 @@
 # Historique
 
+## 0.4.3 · Bêta
+
+- Découpage vidéo visuel : aperçu sans son, deux poignées, début/fin en heures, minutes et secondes, durées rapides de 5 s, 15 s, 30 s et 1 min.
+- Bouton « Découper la vidéo » dans les actions rapides de l’atelier et « Découper un extrait » dans les outils de la roue.
+- Extrait exporté en MP4, MOV, MKV, WebM, AVI, WMV ou M4V, avec conservation du son facultative ; original conservé.
+- Reconnaissance de formats vidéo supplémentaires, dont MPEG, TS/MTS/M2TS, VOB, FLV, 3GP, OGV et ASF. Leur lecture dépend des codecs du fichier.
+- Recherche rapide dans les fichiers indexés, découpage précis par décodage pour les conteneurs qui le nécessitent, et contrôle des intervalles hors vidéo.
+
 ## 0.4.2
 
 - Première préparation pour une publication publique depuis un dépôt dédié à Meloo.

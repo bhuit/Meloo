@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [string]$Setup = (Join-Path $PSScriptRoot '..\dist\Meloo-0.4.2-Setup-x64.exe'),
+    [string]$Setup = (Join-Path $PSScriptRoot '..\dist\Meloo-0.4.3-Setup-x64.exe'),
     [ValidatePattern('^\d{8}-\d{6}$')][string]$ResumeStamp,
     [ValidatePattern('^\{[A-Fa-f0-9-]{36}\}$')][string]$ApplicationId = '{F04D945E-FC72-4D36-8C23-C455AE49367B}',
     [string]$Python = (Join-Path $PSScriptRoot '..\.venv\Scripts\python.exe')
@@ -60,7 +60,7 @@ try {
     $code = Run-Quiet $Setup $installArgs 600000
     Check ($code -eq 0) 'Installation complete sans redemarrage'
     $installed = Get-ItemProperty -LiteralPath $uninstallKey
-    Check ($installed.DisplayName -eq 'Meloo 0.4.2' -and $installed.InstallLocation.TrimEnd('\') -eq $app) 'Desinstallation inscrite dans Windows pour le compte utilisateur'
+    Check ($installed.DisplayName -eq 'Meloo 0.4.3' -and $installed.InstallLocation.TrimEnd('\') -eq $app) 'Desinstallation inscrite dans Windows pour le compte utilisateur'
     $shortcutPath = Join-Path $groupFolder 'Meloo.lnk'
     $shell = New-Object -ComObject WScript.Shell
     Check ((Test-Path -LiteralPath $shortcutPath) -and $shell.CreateShortcut($shortcutPath).TargetPath -eq (Join-Path $app 'Meloo.exe') -and (Test-Path -LiteralPath (Join-Path $groupFolder 'Guide de Meloo.lnk'))) 'Raccourcis du menu Demarrer crees vers la bonne installation'
@@ -95,14 +95,14 @@ try {
             if (Test-Path -LiteralPath $statusFile) { $status = Get-Content -LiteralPath $statusFile -Raw | ConvertFrom-Json }
             if ($status.running) { break }
         }
-        Check ($status.running -and $status.version -eq '0.4.2' -and $status.tray_visible -and $status.watcher_active -and -not $status.window_visible -and $status.color_style -eq 'melina') 'Application installee : arriere-plan, icone, geste Ctrl et theme Melina'
+        Check ($status.running -and $status.version -eq '0.4.3' -and $status.tray_visible -and $status.watcher_active -and -not $status.window_visible -and $status.color_style -eq 'melina') 'Application installee : arriere-plan, icone, geste Ctrl et theme Melina'
         $code = Run-Quiet $exe @('--quit')
         Check ($code -eq 0 -and $resident.WaitForExit(15000)) 'Fermeture normale de l instance de test'
     } finally {
         if (-not $resident.HasExited) { [void](Run-Quiet $exe @('--quit')) }
     }
     $code = Run-Quiet $Python @(('"'+$PSScriptRoot+'\verify_installed.py"'),('"'+$app+'"'),('"'+$scratch+'\conversions"')) 300000
-    Check ($code -eq 0) 'Conversions reelles depuis l installation (image, ZIP, Office, audio)'
+    Check ($code -eq 0) 'Conversions reelles depuis l installation (image, ZIP, Office, audio et decoupage video)'
     $personal = Join-Path $app 'mes-fichiers\a-conserver.txt'
     New-Item -ItemType Directory -Path (Split-Path -Parent $personal) | Out-Null
     'Donnee personnelle de test.' | Set-Content -LiteralPath $personal -Encoding UTF8

@@ -8,7 +8,7 @@ Convertir, compresser et organiser ses fichiers depuis une roue flottante.
 Meloo reste dans la zone de notification : commencez à glisser un fichier depuis
 l’Explorateur, appuyez sur **Ctrl**, puis déposez-le sur une destination.
 
-**[⬇ Télécharger Meloo 0.4.2 BÊTA — installateur Windows .EXE](https://github.com/bhuit/Meloo/releases/download/v0.4.2/Meloo-0.4.2-Setup-x64.exe)**
+**[⬇ Télécharger Meloo 0.4.3 BÊTA — installateur Windows .EXE](https://github.com/bhuit/Meloo/releases/download/v0.4.3/Meloo-0.4.3-Setup-x64.exe)**
 
 **[Lire le guide illustré](LISEZMOI.md)** · [Toutes les versions](https://github.com/bhuit/Meloo/releases) · [Signaler un problème](https://github.com/bhuit/Meloo/issues)
 
@@ -93,6 +93,18 @@ Les changements sont enregistrés immédiatement ; les outils visibles restent a
 ![Choisir les formats visibles dans les fonctionnalités](docs/images/formats-configurables.png)
 
 ## Fonctionnalités
+
+### Nouveau : garder seulement un extrait vidéo
+
+Dans l’atelier, sélectionnez une vidéo et cliquez sur **Découper la vidéo**.
+Depuis la roue : glissez la vidéo, appuyez sur **Ctrl**, puis **Tab** pour passer aux **Outils** et déposez sur **Découper un extrait**.
+Choisissez le début et la fin avec les poignées ou les champs horaires, puis cliquez sur **1 min**, **30 s** ou **5 s** pour ajuster la durée.
+**Voir l’extrait** lance un aperçu visuel sans son ; le son peut être conservé dans le fichier exporté.
+
+![Interface de découpage vidéo de Meloo](docs/images/decoupage-video.png)
+
+**Créer l’extrait** enregistre une nouvelle copie à côté de l’original, ou dans le dossier de sortie choisi.
+Sorties : MP4, MOV, MKV, WebM, AVI, WMV et M4V. Les formats d’entrée lisibles dépendent de FFmpeg ; aucun logiciel ne garantit tous les codecs ni les fichiers protégés.
 
 | Fichiers | Exemples d’actions |
 | --- | --- |

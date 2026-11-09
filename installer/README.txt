@@ -10,7 +10,7 @@ CONSTRUIRE L'ASSISTANT WINDOWS DE MELOO
 4. Dans PowerShell Windows :
    .\build_installer.ps1
 
-Résultat : dist\Meloo-0.4.2-Setup-x64.exe et son empreinte SHA-256.
+Résultat : dist\Meloo-0.4.3-Setup-x64.exe et son empreinte SHA-256.
 L'installateur embarque tout le portable, ses sources, moteurs, licences et rapports.
 Il ne télécharge aucun composant à l'installation.
 
@@ -22,7 +22,7 @@ Le profil historique %LOCALAPPDATA%\Zeste reste extérieur à l'installation.
 Le démarrage automatique n'est pas activé par l'assistant.
 
 Pour tester sans démarrer l'application ni créer de raccourcis :
-Meloo-0.4.2-Setup-x64.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /NOICONS /TASKS="" /DIR="chemin-de-test-vide" /LOG="installation.log"
+Meloo-0.4.3-Setup-x64.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /NOICONS /TASKS="" /DIR="chemin-de-test-vide" /LOG="installation.log"
 Puis : chemin-de-test-vide\uninstall\unins000.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /LOG="desinstallation.log"
 
 Inno Setup : https://jrsoftware.org/ (compilateur officiel 7.1.0 utilisé).

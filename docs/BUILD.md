@@ -58,7 +58,7 @@ Installer ou extraire le compilateur officiel Inno Setup dans `tools/InnoSetup`,
 .\build_installer.ps1
 ```
 
-Résultat : `dist/Meloo-0.4.2-Setup-x64.exe` et son SHA-256. Les scripts et images de l’assistant sont dans `installer/`.
+Résultat : `dist/Meloo-0.4.3-Setup-x64.exe` et son SHA-256. Les scripts et images de l’assistant sont dans `installer/`.
 `installer/Test-Installer.ps1` vérifie installation, conversions, réinstallation et désinstallation dans un dossier
 temporaire dédié. Il refuse de s’exécuter si une installation de Meloo est déjà inscrite dans Windows.
 Les tests de cycle d’installation nécessitent les droits normaux d’une session utilisateur, hors bac à sable.
@@ -75,3 +75,7 @@ pas dans l’historique Git. Vérifier les sources correspondantes et les notice
 avec le fichier de démonstration du dépôt et un profil isolé dans `build/documentation-profile`.
 Le script effectue une conversion PNG → WebP pour illustrer la galerie des résultats.
 Les images sont rendues hors écran ; elles ne constituent pas une vidéo ni un test du geste dans l’Explorateur.
+
+`python scripts/capture_video_trimmer.py` génère la capture du découpage vidéo à partir
+d’une vidéo de démonstration créée par FFmpeg, sans fichier personnel. Le profil et la
+vidéo temporaires restent dans `build/` ; seule la capture est ajoutée à `docs/images/`.

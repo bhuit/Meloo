@@ -2,7 +2,8 @@ from dataclasses import dataclass
 from pathlib import Path
 
 IMAGES = {"jpg", "jpeg", "png", "webp", "heic", "heif", "tif", "tiff", "avif", "bmp", "gif", "svg"}
-VIDEOS = {"mp4", "mov", "mkv", "webm", "avi", "wmv", "m4v"}
+VIDEO_OUTPUTS = ("mp4", "mov", "mkv", "webm", "avi", "wmv", "m4v")
+VIDEOS = set(VIDEO_OUTPUTS) | {"mpg", "mpeg", "mpe", "m1v", "m2v", "ts", "mts", "m2ts", "vob", "flv", "f4v", "3gp", "3g2", "ogv", "asf", "mxf", "qt", "divx", "rm", "rmvb"}
 AUDIO = {"mp3", "m4a", "wav", "flac", "ogg", "opus", "aiff", "aif", "wma", "aac"}
 DOCS = {"docx", "doc", "odt", "rtf", "txt", "md", "html", "htm", "epub", "pages"}
 SHEETS = {"xlsx", "xls", "ods", "csv", "tsv"}
@@ -77,6 +78,7 @@ TOOLS["image"][1:2] = [
     Operation("redact_image", "Masquer une zone", "▬", "Aplat ou flou dans une nouvelle copie"),
 ]
 TOOLS["pdf"] = [Operation(x.id, "Organiser les pages" if x.id == "reorder_pdf" else x.label, x.icon, x.detail) for x in TOOLS["pdf"]]
+TOOLS["video"] = [Operation(x.id, "Découper un extrait", x.icon, "Aperçu, début et fin, raccourcis 5 s à 1 min. L’original est conservé.") if x.id == "trim" else x for x in TOOLS["video"]]
 
 
 def feature_key(paths, operation):

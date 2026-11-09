@@ -1,13 +1,13 @@
 # Bien démarrer avec Meloo · BÊTA
 
-**[Télécharger l’installateur Windows .EXE](https://github.com/bhuit/Meloo/releases/download/v0.4.2/Meloo-0.4.2-Setup-x64.exe)** · [Retour à la présentation](README.md)
+**[Télécharger l’installateur Windows .EXE](https://github.com/bhuit/Meloo/releases/download/v0.4.3/Meloo-0.4.3-Setup-x64.exe)** · [Retour à la présentation](README.md)
 
-> **Meloo 0.4.2 est une version bêta. Elle peut contenir des erreurs.**
+> **Meloo 0.4.3 est une version bêta. Elle peut contenir des erreurs.**
 > Certaines conversions peuvent échouer ou modifier la mise en page. Conservez vos originaux et contrôlez les résultats.
 
 ## 1. Installer et démarrer
 
-Téléchargez **Meloo-0.4.2-Setup-x64.exe** depuis les versions GitHub, puis ouvrez-le.
+Téléchargez **Meloo-0.4.3-Setup-x64.exe** depuis les versions GitHub, puis ouvrez-le.
 Choisissez le dossier et les raccourcis dans l’assistant. Windows 10/11 x64 et environ 2,5 Go sont nécessaires.
 Python, LibreOffice et FFmpeg ne sont pas à installer séparément pour cette distribution complète.
 
@@ -145,6 +145,31 @@ Destinations courantes : **JPG, PNG, WebP, PDF, HEIC, AVIF, TIFF, BMP, GIF**.
 Les outils photo traitent un GIF comme une image fixe ; SVG est un format d’entrée, pas une destination.
 
 ### Vidéo
+
+#### Garder une minute ou quelques secondes
+
+1. Ouvrez **Atelier avancé** par clic droit sur l’icône Meloo, ajoutez votre vidéo et cliquez sur **Découper la vidéo**.
+2. Déplacez les **deux poignées** dans la barre pour délimiter le passage, ou saisissez **Début** et **Fin** au format `heures:minutes:secondes.millisecondes`.
+3. Les boutons **5 s**, **15 s**, **30 s** et **1 min** fixent la durée à partir du début choisi. Si la vidéo se termine avant, la sélection s’arrête à sa fin.
+4. Cliquez sur **Voir l’extrait** pour le prévisualiser. L’aperçu est sans son ; **Conserver le son** contrôle le fichier final.
+5. Choisissez le format de sortie (MP4 conseillé), puis **Créer l’extrait**. Le résultat apparaît dans la galerie et l’original est conservé.
+
+**Exemple :** pour garder une minute à partir de la vingtième minute d’une vidéo d’une heure,
+saisissez `00:20:00.000` dans **Début**, puis cliquez sur **1 min**. La fin devient `00:21:00.000`.
+
+![Découper une vidéo avec les poignées et les champs de début et de fin](docs/images/decoupage-video.png)
+
+Vous pouvez aussi ouvrir ce découpage depuis la roue : **Ctrl pendant le glissement → Tab → Outils → Découper un extrait**.
+Si l’outil est absent, vérifiez **Fonctionnalités… → Vidéo → Découper un extrait**. Sélectionnez une seule vidéo pour cet éditeur.
+
+Entrées reconnues : MP4, MOV, MKV, WebM, AVI, WMV, M4V, MPG/MPEG/MPE, M1V/M2V, TS/MTS/M2TS, VOB,
+FLV/F4V, 3GP/3G2, OGV, ASF, MXF, QT, DIVX, RM/RMVB. La lecture dépend du codec réel et de la présence d’une durée détectable.
+Les fichiers protégés ou endommagés ne sont pas pris en charge.
+Sorties de l’extrait : **MP4, MOV, MKV, WebM, AVI, WMV, M4V**.
+Le découpage réencode la vidéo ; la précision finale dépend aussi de sa cadence et du codec choisi.
+Certains conteneurs, notamment les flux de transport, nécessitent davantage de décodage avant d’atteindre le passage choisi.
+
+#### Autres outils vidéo
 
 **Compresser**, couper un extrait, recadrer, masquer une zone par un rectangle noir, modifier la vitesse,
 séparer ou assembler des séquences, extraire une image et retirer le son.

@@ -6,8 +6,8 @@ param(
 $ErrorActionPreference = 'Stop'
 $Payload = (Resolve-Path -LiteralPath $Payload).Path
 $marker = Get-Content -LiteralPath (Join-Path $Payload '.zeste-generated.json') -Raw | ConvertFrom-Json
-if ($marker.product -ne 'zeste-windows-portable' -or $marker.version -ne '0.4.2') {
-    throw 'La distribution complete Meloo 0.4.2 validee est requise.'
+if ($marker.product -ne 'zeste-windows-portable' -or $marker.version -ne '0.4.3') {
+    throw 'La distribution complete Meloo 0.4.3 validee est requise.'
 }
 foreach ($entry in $marker.source_sha256.PSObject.Properties) {
     $actual = (Get-FileHash -LiteralPath (Join-Path $PSScriptRoot $entry.Name) -Algorithm SHA256).Hash

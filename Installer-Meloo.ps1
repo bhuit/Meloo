@@ -35,7 +35,7 @@ if (Test-Path -LiteralPath $destinationPath) {
         if ($installed.product -ne 'zeste-windows') { throw 'Destination non reconnue : fichiers existants conserves.' }
     }
 }
-$versionName = '0.4.2-' + (Get-Date -Format 'yyyyMMdd-HHmmss-fff')
+$versionName = '0.4.3-' + (Get-Date -Format 'yyyyMMdd-HHmmss-fff')
 $versionPath = [IO.Path]::GetFullPath((Join-Path $destinationPath ('versions\' + $versionName)))
 if (-not $versionPath.StartsWith($destinationPath + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Chemin de version invalide.' }
 if (Test-Path -LiteralPath $versionPath) { throw 'Cette version existe deja : aucun fichier ne sera remplace.' }
@@ -46,7 +46,7 @@ Get-ChildItem -LiteralPath $source -Force | ForEach-Object {
 }
 $exePath = Join-Path $versionPath 'Meloo.exe'
 if (-not (Test-Path -LiteralPath $exePath -PathType Leaf)) { throw 'La copie de Meloo a echoue.' }
-@{ product = 'zeste-windows'; version = '0.4.2'; current = $versionPath; installedAt = (Get-Date -Format o) } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $destinationPath '.zeste-install.json') -Encoding UTF8
+@{ product = 'zeste-windows'; version = '0.4.3'; current = $versionPath; installedAt = (Get-Date -Format o) } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $destinationPath '.zeste-install.json') -Encoding UTF8
 if (-not $NoShortcuts) {
     $shell = New-Object -ComObject WScript.Shell
     $locations = @([Environment]::GetFolderPath('Programs'))
@@ -68,5 +68,5 @@ if (-not $NoShortcuts) {
         $shortcut.Save()
     }
 }
-Write-Host "Meloo 0.4.2 installe : $exePath"
+Write-Host "Meloo 0.4.3 installe : $exePath"
 Write-Host 'Les versions precedentes sont conservees. Les preferences restent dans votre profil existant (Zeste).'

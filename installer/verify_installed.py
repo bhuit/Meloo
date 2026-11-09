@@ -19,6 +19,7 @@ checks = [
     ("image_heic", lambda p: qa.test_packaged_image_codecs(p, "heic")),
     ("office_pdf", qa.test_packaged_docx_to_pdf_uses_private_office),
     ("audio_mp3", qa.test_packaged_audio_uses_private_ffmpeg),
+    ("video_clip", qa.test_packaged_video_clip_uses_bundled_engine),
 ]
 
 def zip_check(folder):

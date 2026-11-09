@@ -9,6 +9,8 @@ Aucun visuel ni texte promotionnel de ce site n’est reproduit.
   `scripts/capture_documentation.py`, avec un profil isolé et le fichier de démonstration du dépôt.
 - `meloo-beta.png` : composition de présentation réalisée avec ces rendus de la roue.
 - `geste-ctrl.svg` : schéma original expliquant les trois étapes.
+- `decoupage-video.png` : véritable fenêtre de découpage de Meloo 0.4.3, rendue par
+  `scripts/capture_video_trimmer.py` avec une vidéo de mire générée localement et un profil isolé.
 - `menu-icone-windows.png` et `formats-configurables.png` : captures d’utilisation fournies par l’utilisateur.
 - `depot-word-demo.png`, `depot-powerpoint-demo.png` et `roue-melina-bureau-demo.png` : illustrations issues
   de trois captures fournies par l’utilisateur, retouchées avec l’outil intégré **imagegen** pour remplacer

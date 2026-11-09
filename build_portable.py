@@ -17,7 +17,7 @@ import sys
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "0.4.2"
+VERSION = "0.4.3"
 MARKER = ".zeste-generated.json"
 PRODUCT = "zeste-windows-portable"
 
@@ -88,7 +88,7 @@ def main():
     runtime_hook = work / "runtime_windowed.py"
     runtime_hook.write_text('import os, sys\nfor name in ("stdout", "stderr"):\n    if getattr(sys, name) is None:\n        setattr(sys, name, open(os.devnull, "w", encoding="utf8"))\n', encoding="utf8")
     version_file = work / "version_info.txt"
-    version_file.write_text('''VSVersionInfo(ffi=FixedFileInfo(filevers=(0,4,2,0),prodvers=(0,4,2,0),mask=0x3f,flags=0x0,OS=0x40004,fileType=0x1,subtype=0x0,date=(0,0)), kids=[StringFileInfo([StringTable('040c04b0', [StringStruct('FileDescription','Meloo - convertisseur local Windows'), StringStruct('FileVersion','0.4.2'), StringStruct('InternalName','Meloo'), StringStruct('OriginalFilename','Meloo.exe'), StringStruct('ProductName','Meloo'), StringStruct('ProductVersion','0.4.2')])]), VarFileInfo([VarStruct('Translation',[1036,1200])])])''', encoding="utf8")
+    version_file.write_text('''VSVersionInfo(ffi=FixedFileInfo(filevers=(0,4,3,0),prodvers=(0,4,3,0),mask=0x3f,flags=0x0,OS=0x40004,fileType=0x1,subtype=0x0,date=(0,0)), kids=[StringFileInfo([StringTable('040c04b0', [StringStruct('FileDescription','Meloo - convertisseur local Windows'), StringStruct('FileVersion','0.4.3'), StringStruct('InternalName','Meloo'), StringStruct('OriginalFilename','Meloo.exe'), StringStruct('ProductName','Meloo'), StringStruct('ProductVersion','0.4.3')])]), VarFileInfo([VarStruct('Translation',[1036,1200])])])''', encoding="utf8")
     spec = work / "Zeste.spec"
     spec_source = r'''
 from pathlib import Path

@@ -100,7 +100,7 @@ def test_packaged_background_has_tray_and_no_main_window(tmp_path, color_style):
             status=json.loads(status_path.read_text(encoding="utf8"))
             if status.get("running"): break
         assert process.poll() is None
-        assert status["version"]=="0.4.2"
+        assert status["version"]=="0.4.3"
         assert status["app_name"]=="Meloo" and status["color_style"]==color_style
         assert status["tray_visible"] and status["watcher_active"]
         assert status["window_visible"] is False
@@ -122,7 +122,7 @@ def test_packaged_background_has_tray_and_no_main_window(tmp_path, color_style):
 
 def test_packaged_inventory_and_source_identity():
     manifest = json.loads((EXE.parent / ".zeste-generated.json").read_text(encoding="utf8"))
-    assert manifest["version"] == "0.4.2"
+    assert manifest["version"] == "0.4.3"
     assert hashlib.sha256(EXE.read_bytes()).digest()==hashlib.sha256(EXE.with_name("Zeste.exe").read_bytes()).digest()
     for relative, expected in manifest["source_sha256"].items():
         assert hashlib.sha256((ROOT / relative).read_bytes()).hexdigest() == expected
@@ -131,6 +131,20 @@ def test_packaged_inventory_and_source_identity():
     assert "icuuc.dll" not in names  # Qt uses the Windows ICU API, not Poppler's.
     assert not list((EXE.parent / "tools").rglob("*.msi"))
     assert (EXE.parent / "tools/share/Zeste.Share.exe").is_file()
+
+
+def test_packaged_video_clip_uses_bundled_engine(tmp_path):
+    from zeste.engine import Engine
+    source = tmp_path / "video.mp4"
+    bundled_ffmpeg = next((EXE.parent / "_internal/imageio_ffmpeg/binaries").glob("*.exe"))
+    subprocess.run([str(bundled_ffmpeg),"-hide_banner","-loglevel","error","-nostdin","-y",
+        "-f","lavfi","-i","testsrc2=s=160x120:r=10:d=3","-f","lavfi","-i","sine=frequency=500:duration=3",
+        "-c:v","libx264","-c:a","aac","-shortest",str(source)],check=True,timeout=30,creationflags=0x08000000)
+    before=hashlib.sha256(source.read_bytes()).digest()
+    result=convert(tmp_path,source,"trim",{"start":1,"duration":.7,"output_format":"mp4","keep_audio":True})[0]
+    info=Engine().media_info(result)
+    assert .6 <= info["duration"] <= .85 and info["video_streams"]==1 and info["audio_streams"]==1
+    assert hashlib.sha256(source.read_bytes()).digest()==before
 
 
 @pytest.mark.parametrize("ext", ["jpg", "heic"])

@@ -14,10 +14,11 @@ import stat
 import struct
 from datetime import datetime
 from pathlib import Path
+from .catalog import VIDEOS
 
 OPERATIONS = frozenset({"frame_image", "redact_video", "visualizer", "edit_metadata", "checksum", "duplicate"})
 RASTER = {".png", ".jpg", ".jpeg", ".webp", ".avif", ".heic", ".heif", ".tif", ".tiff", ".bmp", ".gif"}
-VIDEO = {".mp4", ".mov", ".m4v", ".mkv", ".webm", ".avi", ".wmv"}
+VIDEO = {"." + ext for ext in VIDEOS}
 AUDIO = {".mp3", ".m4a", ".wav", ".flac", ".ogg", ".opus", ".aiff", ".aif", ".wma", ".aac"}
 TAGGED_MEDIA = {".mp3", ".m4a", ".mp4", ".mov", ".mkv", ".webm", ".flac", ".ogg", ".opus", ".wav"}
 EMBEDDED_METADATA = TAGGED_MEDIA | {".jpg", ".jpeg", ".tif", ".tiff", ".pdf", ".png", ".docx", ".xlsx", ".pptx"}

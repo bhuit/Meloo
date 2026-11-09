@@ -19,7 +19,7 @@ import uuid
 import zipfile
 from pathlib import Path
 from typing import Callable
-from .catalog import family, IMAGES, AUDIO
+from .catalog import family, IMAGES, AUDIO, VIDEO_OUTPUTS
 
 ROOT = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent.parent))
 APP_DIR = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else ROOT
@@ -40,6 +40,15 @@ def office_path():
 def ffmpeg_path():
     import imageio_ffmpeg
     return imageio_ffmpeg.get_ffmpeg_exe()
+
+
+def fast_media_seek(source):
+    # Transport streams / Ogg video may seek past the only preceding keyframe.
+    return Path(source).suffix.lower().lstrip(".") in set(VIDEO_OUTPUTS) | AUDIO
+
+
+def media_seek_args(source, seconds):
+    return ["-ss", str(seconds), "-i", str(source)] if fast_media_seek(source) else ["-i", str(source), "-ss", str(seconds)]
 
 
 def unique_path(parent: Path, name: str):
@@ -98,8 +107,14 @@ class Engine:
     def media_info(self, src):
         # The bundled wheel includes ffmpeg, not ffprobe.
         text = self.run_process([ffmpeg_path(), "-hide_banner", "-nostdin", "-protocol_whitelist", "file,pipe", "-i", str(src)], timeout=30, check_exit=False)
+        return self.parse_media_info(text)
+
+    @staticmethod
+    def parse_media_info(text):
         m = re.search(r"Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)", text)
+        rate = re.search(r"^\s*Stream #\d+:\d+[^\n]*?: Video:[^\n]*?\b(\d+(?:\.\d+)?) fps", text, re.M)
         return {"duration": int(m[1])*3600 + int(m[2])*60 + float(m[3]) if m else None,
+                "frame_rate": float(rate[1]) if rate else None,
                 "audio_streams": len(re.findall(r"^\s*Stream #\d+:\d+[^\n]*?: Audio:", text, re.M)),
                 "video_streams": len(re.findall(r"^\s*Stream #\d+:\d+[^\n]*?: Video:", text, re.M))}
 
@@ -191,7 +206,15 @@ class Engine:
         if operation == "compress" and kind == "pdf": return self.pdf_tool(paths, operation, o, dest)
         if operation == "compress" and kind not in {"image", "audio", "video", "pdf"}: return self.archive(paths, "zip", dest)
         if kind == "image": return self.image_convert(src, src.suffix.lower().lstrip(".") if src.suffix.lower() not in {".svg", ".gif"} else "png", o, dest, operation)
-        if kind in {"audio", "video"}: return self.media(src, src.suffix.lower().lstrip("."), operation, o, dest)
+        if kind in {"audio", "video"}:
+            ext = src.suffix.lower().lstrip(".")
+            if kind == "video" and ext not in VIDEO_OUTPUTS:
+                ext = "mp4"
+            if operation == "trim" and "output_format" in o:
+                ext = o["output_format"]
+                allowed = VIDEO_OUTPUTS if kind == "video" else AUDIO
+                if ext not in allowed: raise ConversionError("Format de sortie du découpage non pris en charge.")
+            return self.media(src, ext, operation, o, dest)
         raise ConversionError("Cette opération n’est pas compatible avec ce fichier.")
 
     def open_image(self, src):
@@ -330,15 +353,35 @@ class Engine:
             if not math.isfinite(float(o.get('start',0))) or not 0<=float(o.get('start',0))<self.duration(src): raise ConversionError('Position hors de la vidéo.')
             self.ff(["-ss", str(o.get("start", 0)), "-i", src, "-frames:v", "1", dest / f"{src.stem} — image.png"])
             return
-        suffix = str(o.get('suffix', ext if operation == 'convert' else operation))
+        suffix = str(o.get('suffix', ext if operation == 'convert' else 'extrait' if operation == 'trim' else operation))
         if re.search(r'[\\/:<>"|?*\x00-\x1f]', suffix) or not re.fullmatch(r"[a-z0-9]+", ext):
             raise ConversionError("Nom de sortie invalide.")
         out = dest / f"{src.stem} — {suffix}.{ext}"
         args = ["-i", src]
         if operation == "trim":
-            if float(o.get("start", 0)) < 0 or float(o.get("duration", 10)) <= 0: raise ConversionError("Durées invalides.")
-            args += ["-ss", str(o.get("start", 0)), "-t", str(o.get("duration", 10))]
+            try:
+                start, length = float(o.get("start", 0)), float(o.get("duration", 10))
+            except (TypeError, ValueError):
+                raise ConversionError("Début et durée de l’extrait invalides.")
+            if not math.isfinite(start) or not math.isfinite(length) or start < 0 or length <= 0:
+                raise ConversionError("Début et durée de l’extrait invalides.")
+            info = self.media_info(src)
+            total = info["duration"]
+            if total is None or not math.isfinite(total) or total <= 0:
+                raise ConversionError("Impossible de déterminer la durée de ce média.")
+            if start >= total or start + length > total + .05:
+                raise ConversionError("L’extrait dépasse la durée du média. Vérifie le début et la fin.")
+            if family(src) == "video" and not info["video_streams"]:
+                raise ConversionError("Aucune piste vidéo lisible dans ce fichier.")
+            # Input seeking avoids decoding the whole hour before a late clip.
+            # Re-encoding keeps accurate seeking between keyframes (no stream copy).
+            args = [*media_seek_args(src, start), "-t", str(min(length, total-start)), "-sn", "-dn", "-map_chapters", "-1"]
+            if family(src) == "video": args += ["-map", "0:v:0", "-map", "0:a:0?"]
         vf, af = [], []
+        if operation == "trim" and src.suffix.lower() == ".ogv":
+            # Theora can omit repeated pictures. Materialise the timeline before
+            # output seeking so a still passage does not become a single frame.
+            vf.append(f"fps={info.get('frame_rate') or 30}")
         video = ext not in AUDIO and ext != "gif"
         if ext == "gif":
             args += ["-filter_complex", "fps=12,scale=640:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse", "-an", out]
@@ -379,6 +422,7 @@ class Engine:
             else: codecs = ["-c:v", "libx264", "-preset", "fast", "-crf", str(o.get("crf", 28 if operation == "compress" else 21)), "-c:a", "aac", "-b:a", "160k"]
             vf.append("scale=trunc(iw/2)*2:trunc(ih/2)*2")
             args += codecs
+            if operation == "trim": args += ["-pix_fmt", "yuv420p"]
             if ext in {"mp4", "mov", "m4v"}: args += ["-movflags", "+faststart"]
         else: args += ["-vn", *self.audio_codec(ext)]
         target = float(o.get("target_mb", 0)) * 1024**2
@@ -400,9 +444,13 @@ class Engine:
         if vf: args += ["-vf", ",".join(vf)]
         if af: args += ["-af", ",".join(af)]
         if operation == "channels": args += ["-ac", str(int(o.get("channels", 1)))]
-        if operation == "mute": args += ["-an"]
+        if operation == "mute" or (operation == "trim" and not o.get("keep_audio", True)): args += ["-an"]
         args += ["-map_metadata", "-1", out]
         self.ff(args)
+        if operation == "trim":
+            produced = self.media_info(out)
+            if not produced["duration"] or not produced["video_streams" if video else "audio_streams"]:
+                raise ConversionError("Le moteur n’a pas pu créer un extrait lisible. Essaie un autre passage ou le format MP4.")
         if target and out.stat().st_size > target * 1.05: self.warnings.append(f"{src.name} : poids cible approximatif dépassé.")
         if operation == "compress" and out.stat().st_size >= src.stat().st_size: self.warnings.append(f"{src.name} : la copie n’est pas plus légère.")
 

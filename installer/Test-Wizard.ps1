@@ -6,7 +6,7 @@ $nativeTest = Join-Path $env:LOCALAPPDATA ('Temp\Meloo-Wizard-QA-' + (Get-Date -
 New-Item -ItemType Directory -Path $nativeTest -Force | Out-Null
 $env:TEMP = $nativeTest
 $env:TMP = $env:TEMP
-$setup = Join-Path $preview 'Meloo-0.4.2-Setup-x64.exe'
+$setup = Join-Path $preview 'Meloo-0.4.3-Setup-x64.exe'
 if ($SetupPath) { $setup = $SetupPath }
 $app = Join-Path $nativeTest 'app'
 function Run-Check([string]$File,[string[]]$Arguments) {

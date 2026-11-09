@@ -1,4 +1,4 @@
-Meloo Windows 0.4.2 — reconstruction indépendante, octobre 2026.
+Meloo Windows 0.4.3 — reconstruction indépendante, novembre 2026.
 
 Le code propre à Meloo est distribué sous GNU AGPL version 3 ou ultérieure,
 voir LICENSE.txt. Les bibliothèques et composants tiers conservent leurs licences.
@@ -28,7 +28,7 @@ de construction sont conservés dans licenses/python-environment/.
 Les binaires Qt restent dans des DLL séparées ; aucun mécanisme n’interdit leur
 remplacement par une version compatible. Aucun moteur tiers n’a été modifié.
 
-Sources du port : dossier source du portable et archive Sources-Meloo-0.4.2.zip.
+Sources du port : dossier source du portable et archive Sources-Meloo-0.4.3.zip.
 Build : build_portable.py, requirements.txt, requirements-dev.txt et projet C#.
 Références de sources tierces :
 https://github.com/sintaxerrorpvtltd/Open-Tangerine
@@ -47,3 +47,5 @@ les sources correspondantes et leurs obligations respectives. Cette livraison
 locale n’est ni signée par un certificat éditeur ni publiée sur un store.
 
 Publication 0.4.2 : notices actualisées, scripts Inno Setup inclus et nettoyage PDF conservant les mentions de logiciel et de droits. Les auteurs tiers gardent leurs droits et licences. Voir docs/THIRD_PARTY.md pour les versions et les sources des dépendances.
+
+Publication 0.4.3 : découpage vidéo visuel et formats vidéo supplémentaires ; mêmes moteurs tiers que la publication 0.4.2.

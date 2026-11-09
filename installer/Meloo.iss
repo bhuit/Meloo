@@ -1,6 +1,6 @@
 ; Build with build_installer.ps1. The payload is the validated portable release.
 #ifndef AppVersion
-  #define AppVersion "0.4.2"
+  #define AppVersion "0.4.3"
 #endif
 #ifndef PayloadDir
   #define PayloadDir SourcePath + "..\dist\Zeste"
