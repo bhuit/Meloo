@@ -6,11 +6,14 @@ import sys
 import traceback
 
 root = Path(__file__).resolve().parents[1]
+# Direct script execution sets sys.path to installer/, not the project root.
+# The video-output verifier imports the project's media-info parser.
+sys.path.insert(0, str(root))
 spec = importlib.util.spec_from_file_location("packaged_qa", root / "tests/test_packaged.py")
 qa = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(qa)
-qa.EXE = Path(sys.argv[1]) / "Meloo.exe"
-output = Path(sys.argv[2])
+qa.EXE = Path(sys.argv[1]).resolve() / "Meloo.exe"
+output = Path(sys.argv[2]).resolve()
 output.mkdir(parents=True, exist_ok=True)
 results = []
 checks = [
